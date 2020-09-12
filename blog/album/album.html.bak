@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>album</title>
+    <!-- responsive_bootstrap / refreshing_green -->
+    <meta name="twitter:title" content="album">
+    <meta property="og:title" content="album">
+    <meta property="og:type" content="article">
+    <meta name="description" content="..      ..  ALBUM ..      Javascript is disable - http://www.supportduweb.com/ - Générateur de boutons de navigation">
+    <meta name="twitter:description" content="..      ..  ALBUM ..      Javascript is disable - http://www.supportduweb.com/ - Générateur de boutons de navigation">
+    <meta property="og:description" content="..      ..  ALBUM ..      Javascript is disable - http://www.supportduweb.com/ - Générateur de boutons de navigation">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="album.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <link rel="icon" href="../../medias/site/favicon/symbole-abeille.png">
+    <link href="https://fonts.googleapis.com/css?family=Kalam:300,400,700&amp;display=swap"
+      rel="stylesheet">
+    <link href="../../themes/combined.css%3Fv=6_1591878887_2947.css" rel="stylesheet">
+    <!--[if IE 7]>
+<link href="//medias/static/themes/bootstrap/css/font-awesome-ie7.min.css" rel="stylesheet"><![endif]-->
+    <script src="../../themes/combined.js%3Fv=6_1591878887_2947"></script>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+<script src="//medias/static/themes/bootstrap/js/html5shiv.js"></script><![endif]-->
+    <script src="../../medias/static/jqueryCuttr/jquery.cookie.js"></script>
+    <script src="../../medias/static/jqueryCuttr/jquery.cookiecuttr.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="brand"> </div>
+      </div>
+    </header>
+    <nav class="navbar navbar-static-top">
+      <div class="container">
+        <div class="navbar-inner"> <a class="btn-navbar" data-toggle="collapse"
+            data-target=".nav-collapse"> <i class="icon icon-reorder icon-2x"></i>
+          </a>
+          <div class="nav-collapse collapse">
+            <!-- DC Divider CSS -->
+            <link type="text/css" rel="stylesheet" href="http://environnement-leforest.e-monsite.com/blog/album/dcodes/divider/css/dc_divider.css">
+            <!-- DC Divider CSS -->
+            <link type="text/css" rel="stylesheet" href="http://cdn.dcodes.net/2/divider/css/dc_divider.css">
+            <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&amp;display=swap"
+              rel="stylesheet">
+            <script src="https://kit.fontawesome.com/c2521c5cf4.js" crossorigin="anonymous"></script>
+            <p style="font-size:0.85em; color:green"><img src="../../medias/images/logo-levert-t-1.png"
+                style="margin-top:5px; margin-left:5px;background:transparent" width="80"
+                height="80">Leforest environnement</p>
+            <!-- DC Divider Start --> &nbsp;&nbsp;
+            <div class="dc_divider4" style="width:100%;top:5px"></div>
+            &nbsp;&nbsp;
+            <div style="font-size:1.2em background-color:yellow">
+              <ul class="nav nav-list" style="font-size:1.2em ">
+                <li class="nav_item item_1" style="margin-top:-2px;padding-top:0;padding-bottom:0">
+                  <a href="../../index.html" class="menu_item"> <i class="fas fa-home"></i>
+                    Accueil</a> </li>
+                <li class="nav_item 2" style="margin-top:-2px;padding-top:0;padding-bottom:0">
+                  <a href="../../pages/dossiers.html" class="menu_item"> <i class="fas fa-book-open"></i>
+                    dossiers</a> </li>
+                <li class="nav_item item_2" style=";margin-top:-2px;padding-top:0;padding-bottom:0">
+                  <a href="../../pages/contactez-nous.html" class="menu_item" style="line-height:0.5em;margin-top:-2px;padding-top:0;padding-bottom:0"><i
+                      class="	fas fa-at"></i> contactez-nous</a> </li>
+                <li class="nav_item item_3 " style="margin-top:-2px;padding-top:0;padding-bottom:0">
+                  <a href="../../forum/index.html" class="menu_item"><i class="far fa-comments"></i>
+                    Forums de discussion</a> </li>
+                <li class="nav_item item_4 " style="margin-top:-2px;padding-top:0;padding-bottom:0">
+                  <a href="../../pages/association.html" class="menu_item"><i class="fas fa-handshake"></i>
+                    association</a> </li>
+                <li class="nav_item item_5  " style="margin-top:-2px;padding-top:0;padding-bottom:0">
+                  <a href="../../annuaire/index.html" class="menu_item"><i class="fas fa-share-alt"></i>
+                    Annuaire</a> </li>
+                <li class="nav_item item_6  " style="margin-top:-2px;padding-top:0;padding-bottom:0">
+                  <a href="../annonces/index.html" class="menu_item"><i class="fas fa-bullhorn"></i>
+                    annonces</a> </li>
+                <li class="nav_item item_7 " style="margin-top:-2px;padding-top:0;padding-bottom:0">
+                  <a href="album.html" class="menu_item"><i class="glyphicon glyphicon-camera"></i>
+                    Album</a> </li>
+                <li class="nav_item item_8  last_menu_item" style=";margin-top:-2px;padding-top:0;padding-bottom:0">
+                  <a href="../aux-environs.html" class="menu_item"><i class="fas fa-globe"></i>
+                    aux environs</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="navbar-affix-clone"> </div>
+    <div id="main-area" class="main">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span9 content" id="content-area">
+            <div class="view view-blog" id="view-item" data-category="album">
+              <h1 class="view-title">album</h1>
+              <ul class="inline item-infos">
+                <li> <i class="icon icon-calendar"></i> Le 25/05/2020 </li>
+                <li><i class="icon icon-folder-close"></i> Dans <a href="index.html"
+                    title="">album</a></li>
+              </ul>
+              <div class="clearfix">
+                <div style="position:fixed;top:2px; background-color:#DEE1C9;z-index:10; border-style:ridge;border-width:8px;border-color:#DEE1C9;border-radius:20px"
+                  ;="" class="drop_ombre"> <span> .. <img src="../../medias/images/logo-levert-t-1.png%3Ffx=c_50_50"
+                      alt="Logo levert 1" width="50" height="50"></span> <span><img
+                      src="../../medias/images/album-photos.png%3Ffx=r_80_80" alt="Album photos"
+                      width="80" height="80"></span> <span style="font-size:3em"
+                    class="gravure"> .. ALBUM .. </span> </div>
+                <div id="navigation_up_down_1374"><noscript>Javascript is disable - <a
+href="http://www.supportduweb.com/">http://www.supportduweb.com/</a> - <a href="http://www.supportduweb.com/generateur-boutons-navigation-haut-bas-scroll-defilement-racourcis-page-monter-descendre-up-down.html">Générateur de boutons de navigation</a></noscript>
+                  <script type="text/javascript" src="http://services.supportduweb.com/navigation_up_down/3-1374-right.js"></script></div>
+              </div>
+              <div id="rows-5ec99edfa0f0587aafadfc3a" class="rows clearfix" data-total-pages="1"
+                data-current-page="1">
+                <div class="row-container restitre page_1">
+                  <div class="row-content">
+                    <div class="row">
+                      <div class="column self-stretch" style="width:100%">
+                        <div class="column-content  ">
+                          <div class="items-container" data-module="blog">
+                            <div class="item item-blog media" data-category="album">
+                              <div class="media-body">
+                                <p class="seo-image"> <a href="netoyage-du-printemps-1.html">
+                                    <img src="../../medias/images/nettoyage-printemps.jpeg"
+                                      alt="Nettoyage printemps"> </a> </p>
+                                <h2 class="media-heading"><a href="netoyage-du-printemps-1.html">nettoyage
+                                    du printemps</a></h2>
+                                <ul class="inline item-infos">
+                                  <li><i class="icon icon-calendar"></i> Le
+                                    16/06/2020</li>
+                                  <li><i class="icon icon-folder-close"></i>
+                                    Dans <a href="index.html">album</a></li>
+                                </ul>
+                                <div class="clearfix">
+                                  <p><span style="font-family:comic sans ms,cursive;"><span
+                                        style="font-size:1em">Le Grand Nettoyage
+                                        de Printemps est une grande mobilisation
+                                        citoyenne qui vise à nous sensibiliser l
+                                        à la problématique de la propreté
+                                        publique afin de rendre nos lieux de vie
+                                        et notre environnement quotidien plus
+                                        propres. Tous les citoyens peuvent et
+                                        doivent même se mobiliser autour d’un
+                                        objectif commun : ramasser les déchets
+                                        qui jonchent nos rues, nos chemins de
+                                        campagne, pistes cyclables et autres
+                                        pour que notre région soit plus agréable
+                                        à vivre.</span></span></p>
+                                </div>
+                                <p class="read-more"> <a href="netoyage-du-printemps-1.html"
+                                    class="btn-link"><i class="icon icon-plus"></i>
+                                    Lire la suite</a> </p>
+                              </div>
+                            </div>
+                            <div class="item item-blog media" data-category="album">
+                              <div class="media-body">
+                                <p class="seo-image"> <a href="la-repair-cafe.html">
+                                    <img src="../../medias/images/repair-cafe.jpg"
+                                      alt="Repair cafe"> </a> </p>
+                                <h2 class="media-heading"><a href="la-repair-cafe.html">Le
+                                    repair café</a></h2>
+                                <ul class="inline item-infos">
+                                  <li><i class="icon icon-calendar"></i> Le
+                                    12/06/2020</li>
+                                  <li><i class="icon icon-folder-close"></i>
+                                    Dans <a href="index.html">album</a></li>
+                                </ul>
+                                <div class="clearfix">
+                                  <ul class="menu">
+                                    <li class="nav_item item_0 first_menu_item last_menu_item">
+                                      <a href="https://photos.app.goo.gl/58cqVRgKkikVqybTA"
+                                        class="menu_item">Le repair café</a> </li>
+                                  </ul>
+                                  <p><span style="font-size:1.2em;"><span style="font-family:comic sans ms,cursive;">Le
+                                        Repair Café, une alternative à la
+                                        surconsommation</span></span></p>
+                                </div>
+                                <p class="read-more"> <a href="la-repair-cafe.html"
+                                    class="btn-link"><i class="icon icon-plus"></i>
+                                    Lire la suite</a> </p>
+                              </div>
+                            </div>
+                            <div class="item item-blog media" data-category="album">
+                              <div class="media-body">
+                                <p class="seo-image"> <a href="compteur-communicant-linky.html">
+                                    <img src="../../medias/images/stop-linky2.jpg"
+                                      alt="Stop linky2"> </a> </p>
+                                <h2 class="media-heading"><a href="compteur-communicant-linky.html">Compteurs
+                                    communicants ...</a></h2>
+                                <ul class="inline item-infos">
+                                  <li><i class="icon icon-calendar"></i> Le
+                                    07/06/2020</li>
+                                  <li><i class="icon icon-folder-close"></i>
+                                    Dans <a href="index.html">album</a></li>
+                                </ul>
+                                <div class="clearfix"> . </div>
+                                <p class="read-more"> <a href="compteur-communicant-linky.html"
+                                    class="btn-link"><i class="icon icon-plus"></i>
+                                    Lire la suite</a> </p>
+                              </div>
+                            </div>
+                            <div class="item item-blog media" data-category="linky">
+                              <div class="media-body">
+                                <h2 class="media-heading"><a href="file:../../album-photos/tht/index.html">La
+                                    THT AVELIN GAVRELLE</a></h2>
+                                <ul class="inline item-infos">
+                                  <li><i class="icon icon-calendar"></i> Le
+                                    24/05/2020</li>
+                                  <li><i class="icon icon-folder-close"></i>
+                                    Dans <a href="../linky/index.html">Linky</a></li>
+                                </ul>
+                                <div class="clearfix">
+                                  <p href="" title="Logo levert 1"><img alt="Logo levert 1"
+                                      class="img-left" src="../../medias/images/logo-levert-1.png%3Ffx=c_50_50"
+                                      width="50" height="50"> Leforest
+                                    environnement</p>
+                                  <p style="text-align: center;"><a href="../../medias/images/pylone.jpg"
+                                      title="Pylone"><img alt="Pylone" src="../../medias/images/pylone.jpg"
+                                        style="width: 250px; height: 167px;"></a></p>
+                                  <p><span style="font-family:comic sans ms,cursive;"><span
+                                        style="font-size:1em;">Il aura fallu
+                                        huit ans au Réseau de transport
+                                        d’électricité (RTE) pour que son projet
+                                        devienne concert. Beaucoup de patience
+                                        et encore davantage d’argent. </span></span></p>
+                                </div>
+                                <p class="read-more"> <a href="../linky/la-tht-avelin-gavrelle.html"
+                                    class="btn-link"><i class="icon icon-plus"></i>
+                                    Lire la suite</a> </p>
+                              </div>
+                            </div>
+                            <div class="item item-blog media" data-category="album">
+                              <div class="media-body">
+                                <p class="seo-image"> <a href="les-abeilles.html">
+                                    <img src="../../medias/images/abeille3.gif"
+                                      alt="Abeille3"> </a> </p>
+                                <h2 class="media-heading"><a href="les-abeilles.html">Les
+                                    abeilles</a></h2>
+                                <ul class="inline item-infos">
+                                  <li><i class="icon icon-calendar"></i> Le
+                                    24/05/2020</li>
+                                  <li><i class="icon icon-folder-close"></i>
+                                    Dans <a href="index.html">album</a></li>
+                                </ul>
+                                <div class="clearfix">
+                                  <p><span style="font-size:1em;"><span style="font-family:comic sans ms,cursive;">L'abeille,&nbsp;symbole&nbsp;de
+                                        biodiversité Apparue bien avant les
+                                        hommes, il y a au moins 100 millions
+                                        d'années, l'abeille&nbsp;est l'un
+                                        des&nbsp;symboles&nbsp;forts de la
+                                        biodiversité sur Terre. Elle participe à
+                                        la diversité des plantes et assure une
+                                        bonne part de notre alimentation au
+                                        quotidien grâce à la pollinisation.</span></span></p>
+                                </div>
+                                <p class="read-more"> <a href="les-abeilles.html"
+                                    class="btn-link"><i class="icon icon-plus"></i>
+                                    Lire la suite</a> </p>
+                              </div>
+                            </div>
+                            <div class="item item-blog media" data-category="album">
+                              <div class="media-body">
+                                <p class="seo-image"> <a href="fete-du-printemps.html">
+                                    <img src="../../medias/images/fete.gif" alt="Fete">
+                                  </a> </p>
+                                <h2 class="media-heading"><a href="fete-du-printemps.html">fête
+                                    du printemps</a></h2>
+                                <ul class="inline item-infos">
+                                  <li><i class="icon icon-calendar"></i> Le
+                                    24/05/2020</li>
+                                  <li><i class="icon icon-folder-close"></i>
+                                    Dans <a href="index.html">album</a></li>
+                                </ul>
+                                <div class="clearfix">
+                                  <ul class="menu">
+                                    <li class="nav_item item_0 first_menu_item last_menu_item">
+                                      <a href="https://photos.app.goo.gl/58cqVRgKkikVqybTA"
+                                        class="menu_item">printemps 2018</a> </li>
+                                  </ul>
+                                  <p><span style="font-size:1em;"><span style="font-family:comic sans ms,cursive;">Quelques
+                                        photos de la Fête du printemps
+                                        d'antan...</span></span></p>
+                                </div>
+                                <p class="read-more"> <a href="fete-du-printemps.html"
+                                    class="btn-link"><i class="icon icon-plus"></i>
+                                    Lire la suite</a> </p>
+                              </div>
+                            </div>
+                            <div class="item item-blog media" data-category="album-photos"
+                              <div="">
+                              <h2 class="media-heading"><a href="//../../../album-photos/permaculture/index.html">La
+                                  permaculture</a></h2>
+                              <ul class="inline item-infos">
+                                <li><i class="icon icon-calendar"></i> Le
+                                  22/05/2020</li>
+                                <li><i class="icon icon-folder-close"></i> Dans
+                                  <a href="index.html">album</a></li>
+                              </ul>
+                              <div class="clearfix">
+                                <ul class="menu">
+                                  <li class="nav_item item_0 first_menu_item last_menu_item">
+                                    <a href="../album-photos/permaculture/html"
+                                      class="menu_item">La permaculture</a> </li>
+                                </ul>
+                                <p style="text-align: center;"><a href="../album-photos/permaculture/html"
+                                    "="" title="Permaculture"><img alt="Permaculture"
+                                      src="../../medias/images/permaculture.jpg"
+                                      style="width: 200px; height: 200px;">​</a></p>
+                                <p><span style="font-family:comic sans ms,cursive;"><span
+                                      style="font-size:1em;">La Permaculture,une
+                                      des solutions contre le
+                                      dérèglement&nbsp;climatique..</span>.</span></p>
+                              </div>
+                              <p class="read-more"> <a href="la-permaculture.html"
+                                  class="btn-link"><i class="icon icon-plus"></i>
+                                  Lire la suite</a> </p>
+                            </div>
+                          </div>
+                          <div class="item item-blog media" data-category="album">
+                            <div class="media-body">
+                              <h2 class="media-heading"><a href="la-collecte-des-radios.html">La
+                                  collecte des radios</a></h2>
+                              <ul class="inline item-infos">
+                                <li><i class="icon icon-calendar"></i> Le
+                                  22/05/2020</li>
+                                <li><i class="icon icon-folder-close"></i> Dans
+                                  <a href="index.html">album</a></li>
+                              </ul>
+                              <div class="clearfix">
+                                <ul class="menu">
+                                  <li class="nav_item item_0 first_menu_item last_menu_item">
+                                    <a href="https://photos.app.goo.gl/58cqVRgKkikVqybTA"
+                                      class="menu_item">La collecte des radios</a>
+                                  </li>
+                                </ul>
+                                <p style="text-align: center;"><a href="https://photos.app.goo.gl/58cqVRgKkikVqybTA"
+                                    title="Main"><img alt="Main" src="../../medias/images/main.gif"
+                                      style="width: 150px; height: 150px;"></a></p>
+                                <p><span style="font-family:comic sans ms,cursive;"><span
+                                      style="font-size:1em;">Leforest
+                                      Environnement se consacre depuis des
+                                      années à la collecte des radios médicales
+                                      périmées..</span></span></p>
+                              </div>
+                              <p class="read-more"> <a href="la-collecte-des-radios.html"
+                                  class="btn-link"><i class="icon icon-plus"></i>
+                                  Lire la suite</a> </p>
+                            </div>
+                          </div>
+                          <div class="item item-blog media" data-category="album">
+                            <div class="media-body">
+                              <p class="seo-image"> <a href="divers.html"> <img
+                                    src="../../medias/images/album-photos.png" alt="Album photos">
+                                </a> </p>
+                              <h2 class="media-heading"><a href="divers.html">Divers</a></h2>
+                              <ul class="inline item-infos">
+                                <li><i class="icon icon-calendar"></i> Le
+                                  01/01/2019</li>
+                                <li><i class="icon icon-folder-close"></i> Dans
+                                  <a href="index.html">album</a></li>
+                              </ul>
+                              <div class="clearfix">
+                                <p><span style="font-size:1.2em;"><span style="font-family:comic sans ms,cursive;">Photos
+                                      et Videos diverses</span></span></p>
+                                <br>
+                              </div>
+                              <p class="read-more"> <a href="divers.html" class="btn-link"><i
+                                    class="icon icon-plus"></i> Lire la suite</a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="span3 sidebar accordion" id="sidebar-two">
+          <div class="widget widget_menu">
+            <div>
+              <div class="widget-content">
+                <!-- DC Divider CSS -->
+                <link type="text/css" rel="stylesheet" href="http://environnement-leforest.e-monsite.com/blog/album/dcodes/divider/css/dc_divider.css">
+                <!-- DC Divider CSS -->
+                <link type="text/css" rel="stylesheet" href="http://cdn.dcodes.net/2/divider/css/dc_divider.css">
+                <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&amp;display=swap"
+                  rel="stylesheet">
+                <script src="https://kit.fontawesome.com/c2521c5cf4.js" crossorigin="anonymous"></script>
+                <p style="font-size:0.85em; color:green"><img src="../../medias/images/logo-levert-t-1.png"
+                    style="margin-top:5px; margin-left:5px;background:transparent"
+                    width="80" height="80">Leforest environnement</p>
+                <!-- DC Divider Start --> &nbsp;&nbsp;
+                <div class="dc_divider4" style="width:100%;top:5px"></div>
+                <ul class="nav">
+                  <li class="nav_item item_1" style="margin-top:-2px;padding-top:0;padding-bottom:0">
+                    <a href="../../index.html" class="menu_item"> <i class="fas fa-home"></i>
+                      Accueil</a> </li>
+                  <li class="nav_item 2" style="margin-top:-2px;padding-top:0;padding-bottom:0">
+                    <a href="../../pages/dossiers.html" class="menu_item"> <i class="fas fa-book-open"></i>
+                      dossiers</a> </li>
+                  <li class="nav_item item_2" style=";margin-top:-2px;padding-top:0;padding-bottom:0">
+                    <a href="../../pages/contactez-nous.html" class="menu_item"
+                      style="line-height:0.5em;margin-top:-2px;padding-top:0;padding-bottom:0"><i
+                        class="	fas fa-at"></i> contactez-nous</a> </li>
+                  <li class="nav_item item_3 " style="margin-top:-2px;padding-top:0;padding-bottom:0">
+                    <a href="../../forum/index.html" class="menu_item"><i class="far fa-comments"></i>
+                      Forums de discussion</a> </li>
+                  <li class="nav_item item_4 " style="margin-top:-2px;padding-top:0;padding-bottom:0">
+                    <a href="../../pages/association.html" class="menu_item"><i
+                        class="fas fa-handshake"></i> association</a> </li>
+                  <li class="nav_item item_5  " style="margin-top:-2px;padding-top:0;padding-bottom:0">
+                    <a href="../../annuaire/index.html" class="menu_item"><i class="fas fa-share-alt"></i>
+                      Annuaire</a> </li>
+                  <li class="nav_item item_6  " style="margin-top:-2px;padding-top:0;padding-bottom:0">
+                    <a href="../annonces/index.html" class="menu_item"><i class="fas fa-bullhorn"></i>
+                      annonces</a> </li>
+                  <li class="nav_item item_7 " style="margin-top:-2px;padding-top:0;padding-bottom:0">
+                    <a href="album.html" class="menu_item"><i class="glyphicon glyphicon-camera"></i>
+                      Album</a> </li>
+                  <li class="nav_item item_8  last_menu_item" style=";margin-top:-2px;padding-top:0;padding-bottom:0">
+                    <a href="../aux-environs.html" class="menu_item"><i class="fas fa-globe"></i>
+                      aux environs</a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
