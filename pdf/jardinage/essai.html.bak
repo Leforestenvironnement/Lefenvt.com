@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>essai</title>
+  </head>
+  <body style="height: 138px;"> <textarea name="essai" cols="3" placeholder="mon texte"
+readonly="readonly" autofocus="autofocus" wrap="soft"></textarea><br>
+  </body>
+</html>
