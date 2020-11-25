@@ -24,7 +24,7 @@
      # Check to make sure we haven't set the cookie before 
      RewriteCond %{HTTP:Cookie}  !\mobile=0(;|$) 
      # Now redirect to the mobile site 
-     RewriteRule^https://87671.webnode.fr [R] 
+   RewriteRule ^$ https://87671.webnode.fr/ [L,R=302]
     </IfModule> 
 
 
