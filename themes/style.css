@@ -3871,7 +3871,7 @@ SIDEBARS
     font-weight: normal;    font-style: normal;    text-decoration: none;    color: rgba(243,28,61,1);    }
 /*SIDEBAR SUBDROPDOWNS*/
 .sidebar .dropdown-submenu &gt; a:after{
-    border-left-color: rgba(57,58,54,1);background-color:yellow;
+    border-left-color: rgba(57,58,54,1);background-color: rgba(178,198,96,0); ;
 }
 .sidebar .dropdown-submenu:hover &gt; a{
     color: rgba(243,28,61,1);
@@ -4015,7 +4015,7 @@ MEDIA-QUERIES
 	SURCHARGE BOOTSTRAP
 	========================================================*/
     .nav-collapse{
-        overflow: auto !important;background-color:yellow;
+        overflow: auto !important;background-color: rgba(178,198,96,0);
     }
 	/*NAVBAR DROPDOWN*/
 	.nav-collapse .nav &gt; li &gt; a,
@@ -4037,7 +4037,7 @@ MEDIA-QUERIES
     .navbar .dropdown-submenu.active &gt; a:after,
     .navbar .dropdown-submenu:hover &gt; a:after,
     .navbar .dropdown-submenu.active &gt; a:after{
-        border-top-color: rgba(246,248,237,1);        border-left-color: transparent;background-color:yellow;
+        border-top-color: rgba(246,248,237,1);        border-left-color: transparent;background-color: rgba(178,198,96,0);
     }
 	/*========================================================
 	HEADER
@@ -4971,7 +4971,8 @@ width:100%;
     
     @media (max-width: 979px)
 .navbar .nav&gt;li {
-    background-color:yellow;
+    background-color: rgba(178,198,96,0); ;
+    
     font-size:1.2em;
 }
 
