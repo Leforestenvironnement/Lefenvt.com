@@ -3523,7 +3523,7 @@ MENU
                background-color: rgba(177,255,253,0.04);
 }
 .navbar li:hover &gt; .dropdown-toggle:after,
-.navbar .nav &gt; li.active &gt; .dropdown-toggle:after{background-color:yellow;
+.navbar .nav &gt; li.active &gt; .dropdown-toggle:after{background-color: rgba(177,255,253,0.04);
     border-top-color: rgba(252,10,97,1); }
 /*NAVBAR BUTTON*/
 .navbar .btn-navbar,
@@ -3538,13 +3538,13 @@ MENU
 .navbar .btn-navbar:focus,
 .navbar .btn-navbar:active,
 .navbar .btn-navbar.active{
-    font-weight: bold;    font-style: normal;    text-decoration: none;                background-color: rgba(177,255,253,0.04);background-color:yellow;
+    font-weight: bold;    font-style: normal;    text-decoration: none;                background-color: rgba(177,255,253,0.04);background-color: rgba(177,255,253,0.04);
 }
 .navbar .btn-navbar:hover .icon,
 .navbar .btn-navbar:focus .icon,
 .navbar .btn-navbar:active .icon,
 .navbar .btn-navbar.active .icon{
-    color: rgba(252,10,97,1) !important; background-color:yellow;
+    color: rgba(252,10,97,1) !important; background-color: rgba(177,255,253,0.04);
 }
 /*============================================================
 MENU DROPDOWNS
