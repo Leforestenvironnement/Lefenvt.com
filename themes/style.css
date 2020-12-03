@@ -4828,7 +4828,7 @@ background-size: 80px 80px;
 content:"ALBUM";font-size:3em;}
 
 
-@media screen and (max-width: 979px) {
+@media screen and (max-width:760px) {
   .responsive {
     display: none;
   }}
