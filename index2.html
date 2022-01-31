@@ -2,6 +2,7 @@
 <html lang="fr">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>leforest environnement</title>
      <link rel="shortcut icon" href=" https://leforestenvironnement.github.io/Lefenvt.com/medias/images/logo-levert-1.png" type="image/x-icon">
 
@@ -25,7 +26,54 @@
 <script src="/medias/static/themes/bootstrap/js/html5shiv.js"></script><![endif]-->
     <!--
    <script src="medias/static/jqueryCuttr/jquery.cookie.js"></script>    <script src="medias/static/jqueryCuttr/jquery.cookiecuttr.js"></script>    <script>    $(document).ready(function(){        $.cookieCuttr({            cookieNotificationLocationBottom : true,            cookieDeclineButton : true,            cookieResetButton : false,            cookieAcceptButtonText :'Accepter\u0020les\u0020cookies',            cookieDeclineButtonText :'Refuser\u0020les\u0020cookies',            cookieResetButtonText : 'R\u00E9initialiser\u0020les\u0020cookies',            cookieAnalyticsMessage : 'En\u0020cliquant\u0020vous\u0020acceptez\u0020le\u0020d\u00E9p\u00F4t\u0020de\u0020cookies\u0020destin\u00E9s\u0020au\u0020suivi\u0020des\u0020visites\u0020sur\u0020notre\u0020site,\u0020\u00E0\u0020l\u0027affichage\u0020des\u0020boutons\u0020de\u0020partage\u0020et\u0020aux\u0020remont\u00E9es\u0020de\u0020contenus\u0020des\u0020plateformes\u0020sociales.',            cookieWhatAreLinkText : ''              });    });    </script><script>if(jQuery.cookie('cc_cookie_accept') == "cc_cookie_accept"){     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');        ga('create', 'UA-874445-14', 'auto', 'brandTracker');    ga('brandTracker.send', 'pageview', {        'dimension1' : 'false', /* Eco */        'dimension2' : 'e-monsite', /* Brand */        'dimension3' : 'fr', /* Lang */        'dimension4' : 'free_active', /* Pro */        'dimension5' : 'false', /* Domain */    });} </script><!-- Google Tag Manager -->
-  <style>
+   <script>
+if (!Element.prototype.requestFullscreen) {
+	Element.prototype.requestFullscreen = Element.prototype.mozRequestFullscreen || Element.prototype.webkitRequestFullscreen || Element.prototype.msRequestFullscreen;
+}
+
+
+if (!document.exitFullscreen) {
+	document.exitFullscreen = document.mozExitFullscreen || document.webkitExitFullscreen || document.msExitFullscreen;
+}
+
+
+if (!document.fullscreenElement) {
+
+	Object.defineProperty(document, 'fullscreenElement', {
+		get: function() {
+			return document.mozFullScreenElement || document.msFullscreenElement || document.webkitFullscreenElement;
+		}
+	});
+
+	Object.defineProperty(document, 'fullscreenEnabled', {
+		get: function() {
+			return document.mozFullScreenEnabled || document.msFullscreenEnabled || document.webkitFullscreenEnabled;
+		}
+	});
+}
+
+document.addEventListener('click', function (event) {
+
+	// Ignore clicks that weren't on the toggle button
+	if (!event.target.hasAttribute('data-toggle-fullscreen')) return;
+
+	// If there's an element in fullscreen, exit
+	// Otherwise, enter it
+	if (document.fullscreenElement) {
+		document.exitFullscreen();
+	} else {
+		document.documentElement.requestFullscreen();
+	}
+
+}, false);
+    
+    
+    
+    
+    </script>
+
+    
+    <style>
   
  @font-face {
     font-family:kalam;
@@ -56,7 +104,66 @@
   -webkit-border-radius:20px;
        border-radius:20px;
     }             
-      </style> </div>
+      </style> 
+ <style type="text/css">
+        
+ .switch {
+  position: relative;
+  width:0px;
+  height: 0px;
+  
+}
+.switch label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 10px;border-width:1px;border-color:green;border-style:solid;
+}
+.switch label::after {
+    font-size:0.5em;
+  content: "Plein écran";
+  text-align: center;
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  line-height: 20px;
+  top: 0px;
+  left: 0px;
+  background: #c4e3ac;
+  border-radius: 20px;border-width:1px;border-color:green;border-style:solid;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+}
+.switch input {
+  margin-left: -999px;
+  z-index: -999px;
+}
+.switch input:checked + label {
+  background-color: #c4e3ac;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+}
+.switch input:checked + label::after {
+  font-size:0.5em;
+  content: "Restaurer";
+  text-align: center;
+  transform: translateX(75px);
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  border-width:1px;border-color: #E19FAD;border-style:solid;
+  background: #e5c4c8;
+}  
+      </style>    
+    
+    
+    
+    
+    
+    
+    </div>
     <header id="header">
       <div class="container">
         <div class="brand"> </div>
@@ -94,6 +201,10 @@ background-image:url("https://leforestenvironnement.github.io/Lefenvt.com/medias
 
 </style> <d7> <span align="center" class="restitre" id="ardoise2" style="font-family:font-family: 'Fredericka the Great', cursive;');">~LEFOREST
                                 ENVIRONNEMENT~</span> </d7><br>
+                              <div class="switch drop_ombre"> <input id="cmn-toggle-1"
+                                data-toggle-fullscreen="" name="ecran" type="checkbox">
+                              <label for="cmn-toggle-1" style=" top: 0px; border-width:1px;  border-style:solid;border-radius:14px;border-color:grey"></label>
+                            </div>
                             <marquee behavior="alternate" direction="right" position="fixed"
                               scrollamount="2" style="position:fixed;bottom:0.5%;right:1%; line-height:30px;font-size:14px"
                               height="30px" bgcolor="green"><font color="#F0EFC4">
