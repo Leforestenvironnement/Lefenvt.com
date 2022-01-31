@@ -108,10 +108,10 @@ document.addEventListener('click', function (event) {
  <style type="text/css">
         
  .switch {
-  position: relative;
-  width:0px;
-  height: 0px;
-  
+  position: relative;padding-top:0px;padding-left:0px;
+  width:60px;
+  height: 20px;
+   
 }
 .switch label {
   position: absolute;
@@ -119,8 +119,8 @@ document.addEventListener('click', function (event) {
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: #ccc;
-  border-radius: 10px;border-width:1px;border-color:green;border-style:solid;
+  background-color: transparent;
+ 
 }
 .switch label::after {
     font-size:0.5em;
@@ -128,10 +128,10 @@ document.addEventListener('click', function (event) {
   text-align: center;
   position: absolute;
   width: 60px;
-  height: 20px;
+  height: 22px;
   line-height: 20px;
-  top: 0px;
-  left: 0px;
+  top: -2px;
+  left: -2px;
   background: #c4e3ac;
   border-radius: 20px;border-width:1px;border-color:green;border-style:solid;
   transition: 0.4s;
@@ -150,7 +150,7 @@ document.addEventListener('click', function (event) {
   font-size:0.5em;
   content: "Restaurer";
   text-align: center;
-  transform: translateX(75px);
+  transform: translateX(0px);
   -webkit-transform: translateX(0px);
   -ms-transform: translateX(0px);
   border-width:1px;border-color: #E19FAD;border-style:solid;
@@ -201,10 +201,9 @@ background-image:url("https://leforestenvironnement.github.io/Lefenvt.com/medias
 
 </style> <d7> <span align="center" class="restitre" id="ardoise2" style="font-family:font-family: 'Fredericka the Great', cursive;');">~LEFOREST
                                 ENVIRONNEMENT~</span> </d7><br>
-                              <div class="switch drop_ombre"> <input id="cmn-toggle-1"
+                               <div class="switch drop_ombre"> <input id="cmn-toggle-1"
                                 data-toggle-fullscreen="" name="ecran" type="checkbox">
-                              <label for="cmn-toggle-1" style=" top: 0px; border-width:1px;  border-style:solid;border-radius:14px;border-color:grey"></label>
-                            </div>
+                              <label for="cmn-toggle-1"></label> </div>
                             <marquee behavior="alternate" direction="right" position="fixed"
                               scrollamount="2" style="position:fixed;bottom:0.5%;right:1%; line-height:30px;font-size:14px"
                               height="30px" bgcolor="green"><font color="#F0EFC4">
