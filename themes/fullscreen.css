@@ -45,6 +45,6 @@
   transform: translateX(0px);
   -webkit-transform: translateX(0px);
   -ms-transform: translateX(0px);
-  border-width:1px;border-color: #E19FAD;border-style:solid;
+ border-radius: 20px; border-width:1px;border-color: #E19FAD;border-style:solid;
   background: #e5c4c8;
 }  
