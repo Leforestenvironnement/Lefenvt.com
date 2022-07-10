@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf 8">
+    <title>QCM recyclage</title>
+    <meta name="generator" content="Editeur Questy 3.0">
+    <meta name="author" content="vallet laurent">
+    <meta name="description" content="QCM recyclage">
+    <meta name="keywords" content="QCM, questionnaire choix multiples, creuse, recyclage">
+    <script type="text/javascript">
+//<![CDATA[
+var gs_d=new Date,DoW=gs_d.getDay();gs_d.setDate(gs_d.getDate()-(DoW+6)%7+3);
+var ms=gs_d.valueOf();gs_d.setMonth(0);gs_d.setDate(4);
+var gs_r=(Math.round((ms-gs_d.valueOf())/6048E5)+1)*gs_d.getFullYear();
+var gs_p = (("https:" == document.location.protocol) ? "https://" : "http://");
+document.write(unescape("%3Cscript src='" + gs_p + "s.gstat.orange.fr/lib/gs.js?"+gs_r+"' type='text/javascript'%3E%3C/script%3E"));
+//]]>
+</script> </head>
+  <body style="   background-color: #f5f5e7;" vlink="purple" link="blue" alink="red">
+    <script language="JavaScript">
+//<!--  Dominique Bonnefon (Novembre 2004)
+var enonce_quest = new Array;
+var nb_eltsform = new Array;
+var formans = new Array;
+var commentaire = new Array;
+var ans = new Array;
+var reponse= new Array;
+var image = new Array;
+var score = 0;
+var rep = 0;
+compte3=0;
+var note="";
+
+var entete= "QCM sur le recyclage" ; 
+var courriel= "tuteur@votreadresse.fr" ; 
+
+document.write("<p><font color=ß#0ß><b><strong><font size='10'><center>QCM sur le recyclage</center><font size='3'><font color='#000000'></strong>")
+var nb_elts=19;
+var nb_elts_tot=nb_elts
+enonce_quest [1]="En France le pourcentage de plastique recyclé est de ?"
+nb_eltsform[1]=3
+formans[1]="22 %"
+formans[2]="36 %"
+formans[3]="72 %"
+ans[1] = "100";
+commentaire[1]=""
+image[1]=""
+enonce_quest [2]="La couche de plastique que l'on trouve dans les océans est de ?"
+nb_eltsform[2]=4
+formans[4]="50 cm"
+formans[5]="2m"
+formans[6]="15 m"
+formans[7]="On en trouve jusqu'au fond des abbysses"
+ans[2] = "0001";
+commentaire[2]=""
+image[2]=""
+enonce_quest [3]="On jette l'essuie tout dans le bac carton papier après usage"
+nb_eltsform[3]=2
+formans[8]="VRAI"
+formans[9]="FAUX"
+ans[3] = "01";
+commentaire[3]=""
+image[3]=""
+enonce_quest [4]="En moyenne combien faut-il de bouteilles plastiques pour réaliser un pull polaire ?"
+nb_eltsform[4]=3
+formans[10]="7"
+formans[11]="15"
+formans[12]="20"
+ans[4] = "010";
+commentaire[4]=""
+image[4]=""
+enonce_quest [5]="combien faut il de conserves en acier pour faire une boule de pétanque ?"
+nb_eltsform[5]=3
+formans[13]="9"
+formans[14]="5"
+formans[15]="14"
+ans[5] = "100";
+commentaire[5]=""
+image[5]=""
+enonce_quest [6]="Combien de fois peut on recycler une feuille de papier ?"
+nb_eltsform[6]=3
+formans[16]="7 fois"
+formans[17]="15 fois"
+formans[18]="50 fois"
+ans[6] = "100";
+commentaire[6]=""
+image[6]=""
+enonce_quest [7]="Le papier broyé d'un bureau est plus facile a recycler "
+nb_eltsform[7]=2
+formans[19]="VRAI"
+formans[20]="FAUX"
+ans[7] = "01";
+commentaire[7]=""
+image[7]=""
+enonce_quest [8]="Le mot poubelle vient du nom du préfet POUBELLE qui en est le créateur au 19 eme siècle"
+nb_eltsform[8]=2
+formans[21]="VRAI"
+formans[22]="FAUX"
+ans[8] = "10";
+commentaire[8]=""
+image[8]=""
+enonce_quest [9]="Que doit on faire avant de jeter un pot en verre ?"
+nb_eltsform[9]=4
+formans[23]="Le laver"
+formans[24]="Le casser"
+formans[25]="Enlever l'étiquette"
+formans[26]="Enlever le couvercle"
+ans[9] = "0011";
+commentaire[9]=""
+image[9]=""
+enonce_quest [10]="Combien de déchets un français produit il en moyenne par an ?"
+nb_eltsform[10]=4
+formans[27]="115 Kgs"
+formans[28]="220 Kgs"
+formans[29]="390 Kgs"
+formans[30]="540 Kgs"
+ans[10] = "0010";
+commentaire[10]=""
+image[10]=""
+enonce_quest [11]="Quels sont les principaux composants de nos poubelles ?"
+nb_eltsform[11]=3
+formans[31]="Les papiers et les cartons"
+formans[32]="Les déchets organiques"
+formans[33]="Les plastiques"
+ans[11] = "010";
+commentaire[11]=""
+image[11]=""
+enonce_quest [12]="Quels déchets ne peut on pas jeter dans la poubelle de recyclage ?"
+nb_eltsform[12]=3
+formans[34]="Les aérosols"
+formans[35]="Les boites alimentaires"
+formans[36]="Les pots de yaourt"
+ans[12] = "001";
+commentaire[12]=""
+image[12]=""
+enonce_quest [13]="Qu'est ce que recycler"
+nb_eltsform[13]=4
+formans[37]="Faire le tri"
+formans[38]="Sortir les poubelles"
+formans[39]="Transformer un produit en un autre"
+formans[40]="Aller à la déchèterie"
+ans[13] = "0010";
+commentaire[13]=""
+image[13]=""
+enonce_quest [14]="A quoi correspond la poubelle jaune ?"
+nb_eltsform[14]=3
+formans[41]="Le plastique"
+formans[42]="Le papier et le carton"
+formans[43]="Les ordures ménagères"
+ans[14] = "010";
+commentaire[14]=""
+image[14]=""
+enonce_quest [15]="Comment se débarrassait on des déchets avant l'invention de la poubelle ?"
+nb_eltsform[15]=3
+formans[44]="On les jetait par la fenêtre"
+formans[45]="On les brulait"
+formans[46]="On les enterrait"
+ans[15] = "100";
+commentaire[15]=""
+image[15]=""
+enonce_quest [16]="Il existe des bateaux à hydrogène ?"
+nb_eltsform[16]=2
+formans[47]="VRAI"
+formans[48]="FAUX"
+ans[16] = "10";
+commentaire[16]=""
+image[16]=""
+enonce_quest [17]="Un matériau plastique peut se recycler indefiniment ?"
+nb_eltsform[17]=2
+formans[49]="VRAI"
+formans[50]="FAUX"
+ans[17] = "01";
+commentaire[17]=""
+image[17]=""
+enonce_quest [18]="En 2050 il y aura plus de plastiques que de poissons dans les océans ?"
+nb_eltsform[18]=2
+formans[51]="VRAI"
+formans[52]="FAUX"
+ans[18] = "10";
+commentaire[18]=""
+image[18]=""
+enonce_quest [19]="il a été calculé en 2014 que l'on produisait dans le monde 150 millions de tonnes de plastiques dont se retrouvaient dans l'océan ?"
+nb_eltsform[19]=4
+formans[53]="5 millions de tonnes "
+formans[54]="8 millions de tonnes"
+formans[55]="12 millions de tonnes"
+formans[56]="18 millions de tonnes"
+ans[19] = "0100";
+commentaire[19]=""
+image[19]=""
+
+function arrondi(a)
+{
+var vari=String(a)
+if (vari.charAt(1)=="."){(vari="0"+vari)}
+note=vari.substring(0,5);
+if (note.charAt(0)=="0"){(note=note.substring(1,4))}
+return note;
+}
+
+function mise_a_zero_reponse(){
+for (var i=1;i<=nb_elts;i++){
+reponse[i]=""
+{for (var j=1;j<=nb_eltsform[i];j++)
+{reponse[i]=reponse[i]+"0"}}
+}
+}
+
+
+function maj(question,rep) {
+var temp=""
+for (var i=1;i<=nb_eltsform[question];i++){
+if (i!=rep)
+{temp=temp+reponse[question].charAt(i-1)}
+else
+{if (reponse[question].charAt(i-1)=="0"){temp=temp+"1"}else{temp=temp+"0"}}}
+reponse[question]=temp
+
+}
+
+function correctionemail() {
+ad=window.prompt("A quelle adresse électronique souhaitez-vous envoyer vos résultats ? : ",courriel)
+
+
+var j=1
+var compteur=1
+wsolutions = open("","solu","menubar=no,toolbar=no,scrollbars=yes,status=no,resizable=yes,height=450,width=650")
+wsolutions.document.write('<body bgcolor="#F5F5E7">')
+wsolutions.document.write('<FORM><INPUT TYPE="button" value="Fermer la fenêtre" onClick="parent.close()"></FORM><BR>')
+for (var i=1;i<=(nb_elts);i++)   // calcul du score
+{if (ans[i]==reponse[i]){score =score+1}
+}
+
+wsolutions.document.write('<p><font size="4" color="maroon">'+"Vous avez r&eacute;pondu correctement &agrave; "+score+" questions sur "+nb_elts+" soit ... "+'<font size="6">'+arrondi(score*20/nb_elts)+"/20"+'</text><font color="black"size="3"></p>');
+
+
+ wsolutions.document.write('<form action="mailto:'+ad+'" name="envoi" method="post" enctype="text/plain" ><INPUT TYPE="hidden" NAME="Objet " value="Note obtenue a un questionnaire Questy">');
+var date=new Date();
+date=date.toLocaleString();
+
+
+
+wsolutions.document.write('<B>Entrez vos coordonnées:</B><P>');
+wsolutions.document.write('<input type=hidden name="Date " value="'+date+'">')
+wsolutions.document.write('<input type=hidden name="Theme " value="'+ascii(entete)+'">');
+wsolutions.document.write('<table border="0" width="458"><tr><td width="112"><p>Votre nom : &nbsp;</p>');
+wsolutions.document.write('</td><td width="203"><p><input type="text" name="Nom " size="26"></p></td><td width="129">');
+wsolutions.document.write('<p>&nbsp;</p></td></tr><tr><td width="112"><p>Votre pr&eacute;nom :</p></td><td width="203"><p><input type="text" name="Prenom " size="26"></p>');
+wsolutions.document.write('</td><td width="129"><p>&nbsp;</p></td></tr><tr><td width="112"><p>R&eacute;f&eacute;rences :</p></td><td width="203"><p><input type="text" name="ref " size="26"></p>')
+wsolutions.document.write('</td><td width="129"><p>(&eacute;ventuellement)</p></td></tr></table>');
+
+wsolutions.document.write('Vos commentaires:<BR>');
+wsolutions.document.write('<TEXTAREA NAME="Commentaires " COLS=30 ROWS=5 WRAP=virtual></TEXTAREA><BR>');
+
+wsolutions.document.write('<input type=hidden name="Note obtenue " value="'+arrondi(score*20/nb_elts)+"/20"+'">')
+wsolutions.document.write('<font size="4">Pour envoyer vos r&eacute;sultats &agrave<font color="blue"> '+ad+'</A><font color="black">, cliquez sur Envoyer ...</font></p>')
+
+
+wsolutions.document.write('<INPUT TYPE="submit" VALUE="Envoyer">        ');
+wsolutions.document.write('<INPUT TYPE="reset" VALUE="Recommencer">');
+wsolutions.document.write('</form>');
+
+wsolutions.document.write('<span style="background-color:#F5F5E7;">');
+
+}
+
+function correction() {
+
+var j=1;
+var compteur=1;
+var sc='script';
+wsolutions = open("","solu","menubar=no,toolbar=no,scrollbars=yes,status=no,resizable=yes,height=480,width=640")
+wsolutions.document.write('<html><head><title>Correction</title><script language="JavaScript">function imp(){javascript:window.location.reload(true);javascript:window.print();}</'+sc+'></head>');
+wsolutions.document.write('<body bgcolor="#F5F5E7">')
+wsolutions.document.write('<FORM><INPUT TYPE="button" value="Fermer la fenêtre" onClick="parent.close()"></FORM><BR>')
+for (var i=1;i<=(nb_elts);i++)   // calcul du score
+{if (ans[i]==reponse[i]){score =score+1}
+}
+
+wsolutions.document.write('<p><font size="4" color="maroon">'+"Vous avez r&eacute;pondu correctement &agrave; "+score+" questions sur "+nb_elts+" soit ... "+'<font size="6">'+arrondi(score*20/nb_elts)+"/20"+'</text><font color="black"size="3"></p>')
+wsolutions.document.write('<p><font size="4">'+"Voici les bonnes r&eacute;ponses ..."+'<font size="3">'+" (en vert...)"+'</p>')
+for (var i=1;i<=(nb_elts);i++) 
+{wsolutions.document.write("<b>"+i+" - "+enonce_quest[i]+"</b>")
+ if (image[i].indexOf(".jpg")>0){wsolutions.document.write("<p><font color='#000000'>"+"<img src="+image[i]+">"+"<BR>");}
+ if (image[i].indexOf(".gif")>0){wsolutions.document.write("<p><font color='#000000'>"+"<img src="+image[i]+">"+"<BR>");}
+ if (image[i].indexOf(".bmp")>0){wsolutions.document.write("<p><font color='#000000'>"+"<img src="+image[i]+">"+"<BR>");}
+
+ 
+ if (image[i].indexOf(".mid")>0){wsolutions.document.write("<p><font color='#000000'>"+"<embed src="+image[i]+" border='0' width='140' height='140' type='audio/x-mid' autostart='false'>"+"<BR>");}
+ if (image[i].indexOf(".wav")>0){wsolutions.document.write("<p><font color='#000000'>"+"<embed src="+image[i]+" border='0' width='140' height='140' type='audio/x-wav' autostart='false'>"+"<BR>");}
+ 
+  if (image[i].indexOf(".avi")>0){wsolutions.document.write("<p><font color='#000000'>"+"<embed src="+image[i]+" border='0'  type='video/x-avi' autostart='false'>"+"<BR>");}
+    if (image[i].indexOf(".mpg")>0){wsolutions.document.write("<p><font color='#000000'>"+"<embed src="+image[i]+" border='0'  type='video/x-mpg' autostart='false'>"+"<BR>");}
+    if (image[i].indexOf(".mov")>0){wsolutions.document.write("<p><font color='#000000'>"+"<embed src="+image[i]+" border='0'  type='video/x-mov' autostart='false'>"+"<BR>");}
+
+var rep=1
+
+for (var j=compteur;j<(compteur+nb_eltsform[i]);j++)
+
+{if (ans[i].charAt(rep-1)=="1"){wsolutions.document.write('<font color = "green"><b>')}else{wsolutions.document.write('</b><font color = "black">')}
+
+{if (reponse[i].charAt(rep-1)=="1")
+{wsolutions.document.write("<br><input type='checkbox' name='case1' checked>"+" "+formans[j]+"");rep = rep+1}
+else 
+{wsolutions.document.write("<br><input type='checkbox' name='case1' unchecked>"+" "+formans[j]+"");rep = rep+1}}}
+compteur = j
+
+
+wsolutions.document.write('<p></b><font color="blue"><rows="5" cols="80">'+commentaire[i]+'</text><font color="black"><hr></p>')
+}
+
+wsolutions.document.write('<span style="background-color:#F5F5E7;">')
+//wsolutions.document.write('<input type="button" value="Imprimer cette page" name="Imprimer" OnClick="javascript:imp()">');
+
+wsolutions.document.write('<p><a href="javascript:imp()">Imprimer cette page </a></p>');
+wsolutions.document.write('<FORM><INPUT TYPE="button" value="Fermer la fenêtre" onClick="parent.close()"></FORM>');
+wsolutions.document.write(" (Pour refaire un test, n'oubliez pas de fermer cette fenêtre ...)");
+wsolutions.document.write('</html>');
+}
+
+
+
+
+function recharge() {
+correction();
+self.location.reload(true) ;
+}
+
+function affich_pag(){
+
+
+var j=1
+var compteur=1
+
+for (var i=1;i<=(nb_elts);i++) 
+{document.write("<br><br><font size='3'><b>"+i+" - "+enonce_quest[i]+"</b><br>")
+ if (image[i].indexOf(".jpg")>0){document.write("<p><font color='#000000'>"+"<img src="+image[i]+">"+"<BR>");}
+ if (image[i].indexOf(".gif")>0){document.write("<p><font color='#000000'>"+"<img src="+image[i]+">"+"<BR>");}
+ if (image[i].indexOf(".bmp")>0){document.write("<p><font color='#000000'>"+"<img src="+image[i]+">"+"<BR>");} 
+ 
+ if (image[i].indexOf(".mid")>0){document.write("<p><font color='#000000'>"+"<embed src="+image[i]+" border='0' width='140' height='140' type='audio/x-mid' autostart='false'>"+"<BR>");}
+ if (image[i].indexOf(".wav")>0){document.write("<p><font color='#000000'>"+"<embed src="+image[i]+" border='0' width='140' height='140' type='audio/x-wav' autostart='false'>"+"<BR>");}
+if (image[i].indexOf(".avi")>0){document.write("<p><font color='#000000'>"+"<embed src="+image[i]+" border='0'  type='video/x-avi' autostart='false'>"+"<BR>");}
+    if (image[i].indexOf(".mpg")>0){document.write("<p><font color='#000000'>"+"<embed src="+image[i]+" border='0'  type='video/x-mpg' autostart='false'>"+"<BR>")};
+    if (image[i].indexOf(".mov")>0){document.write("<p><font color='#000000'>"+"<embed src="+image[i]+" border='0'  type='video/x-mov' autostart='false'>"+"<BR>");}
+
+var rep=1
+
+document.write('<Font size="3"></b><form method="get">')
+
+
+for (var j=compteur;j<(compteur+nb_eltsform[i]);j++)
+
+
+{document.write("<input onclick=maj("+i+","+rep+") type='checkbox' name='case1' unchecked>"+" "+formans[j]+"<br>");rep = rep+1}
+
+var compteur = j
+
+}}
+function ascii(entete){
+var i=0
+temp=""
+while (i<(entete.length)){
+    a=entete.charAt(i)
+    switch(a){
+    case"&eacute;":a="e";
+    break;
+    case"&egrave;":a="e";
+    break;
+    case"&ecirc;":a="e";
+    break;
+    case"&euml;":a="e";
+    break;
+    case"&agrave;":a="a";
+    break;
+    case"&icirc;":a="i";
+    break;
+    case"&iuml;":a="i";
+    break;
+    case"&ucirc;":a="u";
+    break;
+    case"&uuml;":a="u";
+    break;
+    }
+    temp=temp+a
+    i++;
+}
+entete=temp
+return entete
+}
+
+
+// -->// End
+</script> <p align="center"><a href="http://www.questy.fr"><strong><br>
+        </strong></a></p>
+    <hr width="75%"><br>
+    <p align="center"><font size="4"><br>
+      </font></p>
+    <h2 style=" text-align: center;"><font size="4"><span style="font-family: Liberation Sans;">Voici
+          quelques questions soumises à votre vivacité d'esprit</span></font></h2>
+    <font size="4"> </font><br>
+    <br>
+    <hr width="75%">
+    <p align="center">&nbsp;</p>
+    <script type="text/javascript" language="JavaScript">
+mise_a_zero_reponse()
+affich_pag()
+</script> <form method="get">
+      <p align="center"><input value="Voyons les réponses et vos résultats ..."
+onclick="javascript:recharge()" type="button"></p>
+      <br>
+      <hr width="80%"><br>
+    </form>
+    <script type="text/javascript">
+//<![CDATA[
+if (typeof _gstat != "undefined") _gstat.audience('','pagesperso-orange.fr');
+//]]>
+</script> </body>
+</html>
