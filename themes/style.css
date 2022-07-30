@@ -5002,7 +5002,10 @@ color:silver;font-style:bold;
 				z-index:10;
 
 }}
-
+     @media screen and (min-width:979px) {
+  .visible {
+    visibility:hidden;
+  }}  
 /*================== clignotant ==========================*/
 
 .image-clignote  {
