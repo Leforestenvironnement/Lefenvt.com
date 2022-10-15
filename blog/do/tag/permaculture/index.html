@@ -1,570 +1,757 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-<title>permaculture</title>
-<!-- responsive_bootstrap / refreshing_green -->
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <link rel="alternate" type="application/rss+xml" href="../../rss.xml" />
-  <link rel="canonical" href="index.html">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Cours Complet Bootstrap 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="https://leforestenvironnement.github.io/fichiers.com/link/bootstrap_style.css"
+      rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="https://leforestenvironnement.github.io/fichiers.com/link/bootstrap_style.css"
+      rel="stylesheet">
+    <link href="https://leforestenvironnement.github.io/fichiers.com/link/styles_blog.css"
+      rel="stylesheet">
+    <link href="https://leforestenvironnement.github.io/fichiers.com/link/scripts_blog.js"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"></script>
+    <style type="text/css">
+html, body {top:10px;
+  background: rgba(0, 0, 0, 0) radial-gradient(circle, #eff5f0 37%, #becdbb 100%) repeat scroll 0% 0%;
+}
+      .accordion{  background: rgba(0, 0, 0, 0) radial-gradient(circle, #eff5f0 37%, #becdbb 100%) repeat scroll 0% 0%;}
+.navbar-toggler {color:blue;
+  background-color:yellow}
+.contenu {
+  overflow: hidden;
+  white-space: nowrap;
+}
+      .nav-link{color:beige}
+        .nav-link:hover{color:red}
+      @media (max-width: 992px) {
+navbar-nav {color:blue;float:right;
+}}
+.contenu {
+  overflow: hidden;
+  white-space: nowrap;
+}
 
+.scrolling {
+  animation: 20s linear 0s normal none infinite running marquee;
+  display: inline-block;
+  padding-right: 10px;
+}
 
+@keyframes marquee {
+0% { transform: translateX(0px); }
+100% { transform: translateX(-100%); }
+}
 
-<meta name="generator" content="e-monsite (e-monsite.com)">
+a {
+  font-size: 1rem !important;
+}
 
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<!--[if IE]>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<![endif]-->
-
-<link rel="icon" href="../../../../medias/site/favicon/symbole-abeille.png">
-
-
-<link href="https://fonts.googleapis.com/css?family=Kalam:300,400,700&amp;display=swap" rel="stylesheet">
-
-
-
-
-
-<link href="../../../../themes/combined.css%3Fv=6_1591878887_2947.css" rel="stylesheet">
-<!--[if IE 7]>
-<link href="//environnement-leforest.e-monsite.com/medias/static/themes/bootstrap/css/font-awesome-ie7.min.css" rel="stylesheet">
-<![endif]-->
-<script src="../../../../themes/combined.js%3Fv=6_1591878887_2947"></script>
-<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-<!--[if lt IE 9]>
-<script src="//environnement-leforest.e-monsite.com/medias/static/themes/bootstrap/js/html5shiv.js"></script>
-<![endif]-->
-
-    <script src="../../../../medias/static/jqueryCuttr/jquery.cookie.js"></script>
-    <script src="../../../../medias/static/jqueryCuttr/jquery.cookiecuttr.js"></script>
-    <script>
-    $(document).ready(function(){
-        $.cookieCuttr({
-            cookieNotificationLocationBottom : true,
-            cookieDeclineButton : true,
-            cookieResetButton : false,
-            cookieAcceptButtonText :'Accepter\u0020les\u0020cookies',
-            cookieDeclineButtonText :'Refuser\u0020les\u0020cookies',
-            cookieResetButtonText : 'R\u00E9initialiser\u0020les\u0020cookies',
-            cookieAnalyticsMessage : 'En\u0020cliquant\u0020vous\u0020acceptez\u0020le\u0020d\u00E9p\u00F4t\u0020de\u0020cookies\u0020destin\u00E9s\u0020au\u0020suivi\u0020des\u0020visites\u0020sur\u0020notre\u0020site,\u0020\u00E0\u0020l\u0027affichage\u0020des\u0020boutons\u0020de\u0020partage\u0020et\u0020aux\u0020remont\u00E9es\u0020de\u0020contenus\u0020des\u0020plateformes\u0020sociales.',
-            cookieWhatAreLinkText : ''      
-        });
-    });
-    </script>
-
-<script>
-if(jQuery.cookie('cc_cookie_accept') == "cc_cookie_accept"){
+#BG_1662736897248_13723 {
+  font-size: 2rem !important;
+}
+.dropdown-menu {
+  background-image: linear-gradient(to right top, #647456, #7c9072, #95ad8f, #afcaad, #cae9cc);
+  color: white;
+  font-weight: bold;
+  border-style:solid;border-radius:15px;
  
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    
-    ga('create', 'UA-874445-14', 'auto', 'brandTracker');
-    ga('brandTracker.send', 'pageview', {
-        'dimension1' : 'false', /* Eco */
-        'dimension2' : 'e-monsite', /* Brand */
-        'dimension3' : 'fr', /* Lang */
-        'dimension4' : 'free_active', /* Pro */
-        'dimension5' : 'false', /* Domain */
-    });
 }
+      .dropdown{color:white}
+.dropdown-item {
+  background-color: tansparent!important;
+  color: white;!important;
+  font-size: 1rem !important;
+}
+     
+      .accordion-button  {
+  background-image: linear-gradient(to right top, #816709, #917b2c, #a18f49, #b1a465, #c2b982);
+  color: white;
+  font-weight: bold;
+  border-style:solid;border-radius:15px;
  
-</script>
-<!-- Google Tag Manager -->
-    <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PVHF9DL');</script>
-<!-- End Google Tag Manager -->
-</head>
-<body id="blog_do_tag_permaculture" class="forum">
-    <style>
-#ems-try-content {
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
 }
-#ems-try-info {
-    background-image: url('../../../../medias/static/im/tryme/ems-tryme-bkg.png');
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-color: #fff;
-    background-size: 100% auto;
-    display: none;
-    width: 100%;
+      .card-header  {
+  background: rgba(0, 0, 0, 0) radial-gradient(circle, #eff5f0 37%, #becdbb 100%) repeat scroll 0% 0%;
+  color: white;
+        width:100%;
+
+ 
 }
-#ems-try-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+.nav-item {
+  background-color: tansparent;
+  color: white;!important;
+  font-size: 1rem !important;
 }
-#ems-try-close {
-    background: #111;
-    border: none;
-    border-radius: 0 0 4px 4px;
-    bottom: 0;
-    left: 50%;
-    padding: 7.5px 20px;
-    position: absolute;
-    -webkit-transform: translateX(-50%) translateY(100%);
-    transform: translateX(-50%) translateY(100%);
+.titre {
+  font-size:calc(1.525rem + 3.3vw);
 }
- #ems-try-close:before {
-    color: #fff;
-    content: '\2913';
+      @media (max-width: 932px) {
+  .titre {
+    font-size: 2rem;
+  }
 }
-#ems-try-close[state="close"]:before {
-    content: '\2912';
+      .titre2 {
+  font-size:calc(1.225rem + 1vw);
 }
-</style>
-<div id="ems-try-content">
-    <div id="ems-try-info">
-        <a id="ems-try-link" href="https://www.e-monsite.com/" title="Créer un site Internet avec e-monsite">
-            <img alt="Créer un site internet" src="../../../../medias/static/im/tryme/ems-tryme-illustration.png" />
-        </a>
-    </div>
-    <button id="ems-try-close" state="open" type="button"></button>
-</div>
-<script>
-$(window).on('load', function(){
-    var pub = $("#ems-try-info");
-    var btn = $("#ems-try-close");
-    //NOTICE : Reveal
-    $( pub ).delay( 500 ).slideDown(function(){
-        $( btn ).attr("state", "close");
-        $( pub ).delay(3000).slideUp(function() {
-            $( btn ).attr("state", "open");
-        });
-    });
-    //NOTICE : Click
-    $( btn ).on('click', function(){
-        $( pub ).stop();
-        if( $( pub ).is( ":hidden" ) )
-        {
-            $( pub ).slideDown();
-            $( btn ).attr( "state", "close" );
-        }
-        else
-        {
-            $( pub ).slideUp();
-            $( btn ).attr( "state", "open" );
-        }
-    });
-});
-</script>
-            
-    <header id="header">
-                <div class="container">
-                                                                        <div class="brand">
-                                                            </div>
-                        
+      @media (max-width: 932px) {
+  .titre2 {
+    font-size: 1.25 rem;
+  }
+        .card-text{ font-size: 0.75rem;}
+}
+      .drop_ombre{
+     -webkit-filter: drop-shadow(8px 8px 10px  rgba(100,100,100,0.45)); /* Safari */
+    filter: drop-shadow(20px 15px 10px  rgba(100,100,100,0.45));
+}
+     ]
+</style> </head>
+  <body> <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg" id="mainNav" style="position:fixed;
+    background-image: linear-gradient(to right, #45835b, #578c6b, #69947a, #7b9c89, #8ea498);">
+      <div class="container-fluid px-4 px-lg-5">
+        <h1> <img-fluid class=" ms-1" src="http://leforestenvironnement.github.io/Lefenvt.com/medias/images/logo_vert_clair.png"
+            style="top: 297px; left: 48px; width: 52px; height: 49px; margin-left: -28px; color: white;">
+            <span style="color: #ffff33;"> Leforest environnement </span></img-fluid></h1>
+        &nbsp; <span style="color: #ffff33;" id="BG_1664343885904_75538">(permaculture)</span>
+        <span style="color: white;"> <button class="navbar-toggler " type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+            aria-expanded="false" aria-label="Toggle navigation; color:yellow;background-color:blue">Menu
+            </button> </span> <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav  ms-auto py-4 py-lg-0">
+            <li class="nav-item"><strong><a class="nav-link" href="https://leforestenvironnement.github.io/fichiers.com/index.html">
+                  Accueil</a></strong></li>
+            <li class="nav-item"><strong><a class="nav-link" href="javascript:history.back()">
+                  précedent</a></strong></li>
+            <li class="nav-item"><strong><a class="nav-link" href="https://leforestenvironnement.github.io/fichiers.com/pages/contactez-nous.html">
+                  Contact</a></strong></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="container">
+      <h1 style="text-align: center; margin-top: 63px;"><span style="color: #990000;">LA
+          PERMACULTURE</span></h1>
+      <h1></h1>
+      <h4><span style="color: #006600;"><em>C’est une forme d’agriculture qui
+            s'impire de la nature. La permaculture fournit des solutions, des
+            outils, pour réussir au mieux cette imitation.</em></span></h4>
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <h4><span style="color: #006600;">On n’utilise aucun produit chimique
+            (engrais ou pesticides). Normalement, la permaculture est une
+            agriculture biologique. </span></h4>
+      </div>
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <h4><span style="color: #006600;">Parce que, dans la nature, le sol
+            n’est jamais labouré (sauf par certains animaux). On respecte les
+            insectes, les vers et les bactéries qui y vivent, car ce sont eux
+            qui digèrent les feuilles mortes et les fruits gâtés qui tombent,
+            qui les décomposent et les transforment en sol, en terre. </span></h4>
+      </div>
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <h4><span style="color: #006600;">Parce qu’elles s’aident entre elles.
+            Il y a des plantes «&nbsp;compagnes&nbsp;», comme les poireaux et
+            les fraises, qui se protègent mutuellement de leurs parasites, et
+            jouent donc le rôle de pesticides naturels. Et il y a les
+            associations qui sont bénéfiques en sous-sol&nbsp;: les haricots
+            prélèvent l’azote de l’air (un élément fertilisant très important)
+            et le rendent dans le sol au niveau des racines. Cela plaît beaucoup
+            aux salades. Et en plus, les haricots leur apportent de l’ombre… </span></h4>
+      </div>
+      <div class="col-md-10 col-lg-8 col-xl-7">On couvre le sol de paille pour
+        qu’il ne s’assèche pas, ou moins vite, et garde l’eau en profondeur. </div>
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <h4><b>Cest une une philosophie de vie qui fait totalement contrepied à
+            notre société de consommation.</b></h4>
+        <h4><span style="color: #006600;">La permaculture engage ses adeptes à
+            respecter la Nature, l’environnement, les forêts, les nappes
+            phréatiques et tous les êtres vivants qui existent (les nuisibles
+            également).</span></h4>
+      </div>
+      <p></p>
+      <div class="accordion" id="exempleAccordeon" style="margin-left: -80px; width: 1270px;">
+        <div class="card">
+          <section class="pt-0">
+            <div class="card-header" id="header1" style="text-align: left;"> <button
+                class="accordion-button btn-link titre2" type="button" data-toggle="collapse"
+                data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">La
+                permaculture comment ça marche ?</button> </div>
+            <div id="collapse1" class="collapse " aria-labelledby="header1" data-parent="#exempleAccordeon">
+              <div class="card-body">
+                <div class="row justify-content-start">
+                  <div class="col-4"><img class="img-fluid" src="http://www.monjardinenpermaculture.fr/system/rich/rich_files/rich_files/000/000/320/trois-tiers/capture-20d-e2-80-99e-cc-81cran-202016-02-15-20a-cc-80-2013-52-45.png"
+                      alt="" style="width: 258px;"></div>
+                  <h6>De tout petits êtres vivants (collemboles, acariens,
+                    cloporte...), des micro-organismes (bactéries, champignons)
+                    et des vers de terre sont présents dans le sol. Cette faune
+                    va travailler le sol et décomposer la matière organique
+                    déposée en surface (feuilles mortes, paillis) ou les racines
+                    mortes.;</h6>
+                  <h6> Les bactéries et les champignons transforment la matière
+                    organique en Humus</h6>
+                  <h6> </h6>
+                  <h6> L'humus nourrit les plantes (azote, phosphore, potassium,
+                    magnesium, ...) et stocke l'eau .</h6>
                 </div>
-            </header>
-    
-        <nav class="navbar navbar-static-top">
-                <div class="container">
-                    <div class="navbar-inner">
-                <a class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <i class="icon icon-reorder icon-2x"></i>
-                </a> 
-                <div class="nav-collapse collapse">
-                
-
-<!-- DC Divider CSS -->
-<link type="text/css" rel="stylesheet" href="http://environnement-leforest.e-monsite.com/blog/do/tag/permaculture/dcodes/divider/css/dc_divider.css" />
-<!-- DC Divider CSS -->
-<link type="text/css" rel="stylesheet" href="http://cdn.dcodes.net/2/divider/css/dc_divider.css" />
-
- <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&amp;display=swap" rel="stylesheet" />
-<script src="https://kit.fontawesome.com/c2521c5cf4.js" crossorigin="anonymous"></script>
-<p style="font-size:0.85em; color:green"><img src="../../../../medias/images/logo-levert-t-1.png"width="80" height="80"
-style="margin-top:5px; margin-left:5px;background:transparent">Leforest environnement</p>
- <!-- DC Divider Start -->
-  <div class="dc_divider4" style="width:100%;top:5px"></div>
-  <div style="font-size:1.2em background-color:yellow">
-   <ul class="nav nav-list"style="font-size:1.2em ">
-        <li class="nav_item item_1" style="margin-top:-2px;padding-top:0;padding-bottom:0" >
-         <a href="../../../../index.html" class="menu_item" > <i class="fas fa-home"></i>  Accueil</a>
-               </li>
-                    <li class="nav_item 2"style="margin-top:-2px;padding-top:0;padding-bottom:0">
-         <a href="../../../../pages/dossiers.html" class="menu_item" > <i class="fas fa-book-open"></i> dossiers</a>
-               </li>
-            <li class="nav_item item_2" style=";margin-top:-2px;padding-top:0;padding-bottom:0">
-         <a href="../../../../pages/contactez-nous.html" class="menu_item"style="line-height:0.5em;margin-top:-2px;padding-top:0;padding-bottom:0" ><i class="	fas fa-at"></i> contactez-nous</a>
-               </li>
-            <li class="nav_item item_3 "style="margin-top:-2px;padding-top:0;padding-bottom:0">
-         <a href="../../../../forum/index.html" class="menu_item" ><i class="far fa-comments"></i> Forums de discussion</a>
-               </li>
-            <li class="nav_item item_4 "style="margin-top:-2px;padding-top:0;padding-bottom:0">
-         <a href="../../../../pages/association.html" class="menu_item" ><i class="fas fa-handshake"></i> association</a>
-               </li>
-            <li class="nav_item item_5  "style="margin-top:-2px;padding-top:0;padding-bottom:0">
-         <a href="../../../../annuaire/index.html" class="menu_item" ><i class="fas fa-share-alt"></i> Annuaire</a>
-               </li>
-            <li class="nav_item item_6  "style="margin-top:-2px;padding-top:0;padding-bottom:0">
-         <a href="../../../annonces/index.html" class="menu_item" ><i class="fas fa-bullhorn"></i> annonces</a>
-               </li>
-                <li class="nav_item item_7 "style="margin-top:-2px;padding-top:0;padding-bottom:0">
-         <a href="../../../album/album.html" class="menu_item" ><i class="glyphicon glyphicon-camera"></i> Album</a>
-               </li>
-           
-            <li class="nav_item item_8  last_menu_item"style=";margin-top:-2px;padding-top:0;padding-bottom:0">
-         <a href="../../../aux-environs.html" class="menu_item" ><i class="fas fa-globe"></i> aux environs</a>
-               </li>
-         </ul>
-</div>
-
-                </div>
+              </div>
+              <div class="row justify-content-start"><br>
+              </div>
+              <hr>
+              <h3><span style="color: #990000;">LE PAILLAGE</span></h3>
+              <h3> </h3>
+              <div class="row justify-content-start">
+                <div class="col-4"><img class="img-fluid" src="http://www.monjardinenpermaculture.fr/system/rich/rich_files/rich_files/000/000/110/content_thumb/mulch-1.jpg?1440877051"
+                    style="width: 258px;"></div>
+                <h6>"Pailler le sol" signifie couvrir la surface du sol, avec
+                  par exemple des feuilles mortes, des tontes de gazon, du BRF
+                  (Bois Raméal Fragmenté), de la paille...</h6>
+                <h6><br>
+                  Le paillage du sol est essentiel, même sur un balcon, cela
+                  présente de multiples avantages :</h6>
+                <h6><br>
+                  cela limite les herbes indésirables</h6>
+                <h6>cela réduit les besoins d'arrosage (l'évaporation est
+                  divisée par 4)</h6>
+                <h6>cela protège le sol (du tassement, de l'érosion) et la faune
+                  du sol</h6>
+                <h6>cela nourrit les organismes qui travaillent le sol et le
+                  rendent fertile</h6>
+              </div>
+              <hr>
+              <h3> <span style="color: #990000;">AMELIORER LE SOL</span></h3>
+              <div class="row justify-content-start">
+                <div class="col-4"><img-fluid src="http://www.monjardinenpermaculture.fr/system/rich/rich_files/rich_files/000/000/202/content_thumb/ame-cc-81liorer-20le-20sol-2.jpg?1442507259"
+                    style="width: 258px;"></img-fluid></div>
+                <h6>&nbsp;En permaculture, améliorer (on parle d'aggrader) le
+                  sol, le rendre toujours plus vivant et fertile, est un
+                  objectif essentiel.</h6>
+                <h6><br>
+                  C'est le sol qui nourrit la plante et lui fournit les éléments
+                  nutritifs dont elle a besoin.</h6>
+                <h6>Grâce aux paillis de matière organique on nourrit la faune
+                  du sol et on permet la création du précieux humus. </h6>
+                <h6><br>
+                  D'autres actions peuvent s'avérer nécessaires, comme le
+                  décompactage, la recherche d'un pH (le niveau d'acidité)
+                  adapté aux cultures souhaitées, l'ajout d'amendements pour
+                  modifier la texture. Les engrais verts et le compost sont
+                  d'excellents moyens pour améliorer le sol.</h6>
+              </div>
+              <hr>
+              <div class="row justify-content-start"><br>
+              </div>
+              <h3><span style="color: #990000;">Faire du compost<br>
+                </span></h3>
+              <h3> </h3>
+              <div class="col-4"><img class="img-fluid" src="http://www.monjardinenpermaculture.fr/system/rich/rich_files/rich_files/000/000/114/content_thumb/compost-1.jpg?1440878186"
+                  style="width: 258px;"></div>
+              <h6>Faire du compost permet de créer un sol fertile, tout en
+                recyclant des déchets du jardin et de la cuisine, qui seront
+                sinon collectés, transportés et incinérés, générant pollution et
+                coûts pour la collectivité.</h6>
+              <h6><br>
+                Faire du compost est simple, facile, réalisable par tout un
+                chacun mais ce n'est pas un simple tas de déchets oubliés au
+                fond du jardin.</h6>
+              <h6><br>
+                Le compost est le résultat d'une décomposition, c'est-à-dire
+                d'une transformation de matières organiques (végétales ou
+                animales) par des êtres vivants (insectes, vers, bactéries...).
+                Cette décomposition nécessite de l'oxygène sinon les déchets
+                pourrissent. </h6>
+              <h6><br>
+                Les clés pour réussir rapidement un bon compost sont : les bons
+                ingrédients, un bon équilibre de ces ingrédients, de l'aération
+                et un bon taux d'humidité.</h6>
+              <h6><br>
+                On peut faire un compost de différentes manières : en tas, en
+                composteur, sur le sol, en lombricomposteur.</h6>
             </div>
-                </div>
-            </nav>
-        <div class="navbar-affix-clone">
+          </section>
+        </div>
+      </div>
     </div>
-            
-    <div id="main-area" class="main">
-        <div class="container">
-                            
-                    
-            <div class="row-fluid">
-                
-                                
-                                
-                <div class="span9 content" id="content-area">
-                                                                                
-                    <div class="view view-blog" id="view-tags">
-    <h1 class="view-title">permaculture</h1>
-    
-    
-        <div class="items-container">
-                     <div class="item item-blog media" data-category="permaculture">
-        <div class="media-body">
-                        <h2 class="media-heading"><a href="../../../permaculture/savoir-comment-ca-marche.html">La permaculture</a></h2>
-            <ul class="inline item-infos">
-                                
-                                
-                <li><i class="icon icon-calendar"></i> Le 27/06/2020</li>
-                                                <li><i class="icon icon-folder-close"></i> Dans <a href="../../../permaculture/index.html">permaculture</a></li>
+    <div class="card">
+      <div class="card-header" id="header2"> <button class="accordion-button btn-link titre2"
+          type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true"
+          aria-controls="collapse2">Documentation utile au permaculteur</button>
+      </div>
+      <div id="collapse2" class="collapse " aria-labelledby="header2" data-parent="#exempleAccordeon">
+        <div class="card-body">
+          <section class="pt-0">
+            <div class="container px-lg-5">
+              <!-- Page Features-->
+              <div class="row gx-lg-5">
+                <div class="col-lg-6 col-xxl-4 mb-5">
+                  <div class="card bg-light border-1 h-100">
+                    <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0"><span
+                        style="color: #333333;"> </span>
+                      <div class="feature rounded-3 mb-4 mt-n4" style="background-color:transparent "><img
+                          class="img-fluid" style="width:48px;height:48px" src="file:///home/florian/leforestenvironnement.github.io/Lefenvt.com/medias/images/purins.png"
+                          alt=""></div>
+                      <div class="card img-fluid bg-transparent" style="auto;margin:auto">
+                        <img class="card-img-top" style="opacity:0.4" src="file:///home/florian/leforestenvironnement.github.io/Lefenvt.com/medias/images/purins.png"
+                          alt="Card image">
+                        <div class="card-img-overlay" style="top: 0px; height: auto;">
+                          <h1 class="card-title"><b><span style="color: black;"
+                                class="titre2">Les purins de plantes<br>
+                              </span></b></h1>
+                          <p class="card-text"> </p>
+                          <ul>
+                          </ul>
+                          <ul>
+                          </ul>
+                          .
+                          <p></p>
+                          <div class="dropdown container-fluid"> <button class="btn btn-primary btn-lg dropdown-toggle position-absolute top-0 start-50 translate-middle-x"
+                              type="button" data-bs-toggle="dropdown" aria-expanded="false">En
+                              savoir plus... </button>
+                            <ul class="dropdown-menu ">
+                              <li class="titre2" style="background-color:yellow;color:black">LES
+                                PURINS</li>
+                              <li class="dropdown-divider" style="border-color:yellow;border-width:3px"><br>
+                              </li>
+                              <li><a class="dropdown-item" href="https://leforestenvironnement.github.io/Lefenvt.com/pdf/jardinage/pdf.html?name=../../pdf/jardinage/LIVRECOMPLET-v2.pdf">Purins
+                                  de plantes</a></li>
+                              <li class="dropdown-divider" style="border-color:yellow;border-width:3px"><br>
+                              </li>
+                              <li><a class="dropdown-item" href="https://leforestenvironnement.github.io/Lefenvt.com/pdf/jardinage/pdf.html?name=../../pdf/jardinage/Purind_ortie%20et%20compagnie....pdf">Purin
+                                  d'orties et compagnie..</a></li>
+                              <br>
+                              <li class="dropdown-divider" style="border-color:yellow;border-width:3px"><br>
+                              </li>
+                              <li><a class="dropdown-item" href="https://leforestenvironnement.github.io/Lefenvt.com/pdf/jardinage/pdf.html?name=../../pdf/jardinage/consoude.sureau..ortie.prele.-.teh.-.3p.pdf">consoudre,sureau,
+                                  orties, prêle..</a></li>
+                              <li class="dropdown-divider" style="border-color:yellow;border-width:3px"><br>
+                              </li>
+                              <li><a class="dropdown-item" href="https://leforestenvironnement.github.io/Lefenvt.com/pdf/jardinage/pdf.html?name=../../pdf/jardinage/LesOrmus.pdf">ormus
+                                  definition</a></li>
+                              <br>
+                              <li class="dropdown-divider" style="border-color:yellow;border-width:3px"><br>
+                              </li>
+                              <li><a class="dropdown-item" href="https://leforestenvironnement.github.io/Lefenvt.com/pdf/jardinage/pdf.html?name=../../pdf/jardinage/Une%20recette%20facile%20pour%20fabriquer%20de%20l%E2%80%99Ormus.pdf">
+                                  méthode fabrication ormus</a></li>
+                              <br>
                             </ul>
-            <div class="clearfix">
-                .
-            </div>
-    
-                        <p class="read-more">
-                <a href="../../../permaculture/savoir-comment-ca-marche.html" class="btn-link"><i class="icon icon-plus"></i> Lire la suite</a>
-            </p>
+                            <br>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-            </div>
-                     <div class="item item-blog media" data-category="permaculture">
-        <div class="media-body">
-                        <h2 class="media-heading"><a href="../../../permaculture/le-compost.html">Le compost</a></h2>
-            <ul class="inline item-infos">
-                                
-                                
-                <li><i class="icon icon-calendar"></i> Le 24/06/2020</li>
-                                                <li><i class="icon icon-folder-close"></i> Dans <a href="../../../permaculture/index.html">permaculture</a></li>
-                            </ul>
-            <div class="clearfix">
-                .
-            </div>
-    
-                        <p class="read-more">
-                <a href="../../../permaculture/le-compost.html" class="btn-link"><i class="icon icon-plus"></i> Lire la suite</a>
-            </p>
-                    </div>
-            </div>
-                     <div class="item item-blog media" data-category="permaculture">
-        <div class="media-body">
-                        <h2 class="media-heading"><a href="../../../permaculture/le-paillis.html">Le paillis</a></h2>
-            <ul class="inline item-infos">
-                                
-                                
-                <li><i class="icon icon-calendar"></i> Le 21/06/2020</li>
-                                                <li><i class="icon icon-folder-close"></i> Dans <a href="../../../permaculture/index.html">permaculture</a></li>
-                            </ul>
-            <div class="clearfix">
-                .
-            </div>
-    
-                        <p class="read-more">
-                <a href="../../../permaculture/le-paillis.html" class="btn-link"><i class="icon icon-plus"></i> Lire la suite</a>
-            </p>
-                    </div>
-            </div>
-                     <div class="item item-blog media" data-category="permaculture">
-        <div class="media-body">
-                        <h2 class="media-heading"><a href="../../../permaculture/comment-ca-marche.html">comment ça marche?</a></h2>
-            <ul class="inline item-infos">
-                                
-                                
-                <li><i class="icon icon-calendar"></i> Le 19/06/2020</li>
-                                                <li><i class="icon icon-folder-close"></i> Dans <a href="../../../permaculture/index.html">permaculture</a></li>
-                            </ul>
-            <div class="clearfix">
-                <link rel="alternate" media="only screen and (max-width: 979px)"
- href="../../../essai-1.html">
-<head>
-    <!-- Des choses -->
-    <meta name="viewport" content="width=device-width"/>
-    <!-- Encore des choses -->
-</head>
-            </div>
-    
-                        <p class="read-more">
-                <a href="../../../permaculture/comment-ca-marche.html" class="btn-link"><i class="icon icon-plus"></i> Lire la suite</a>
-            </p>
-                    </div>
-            </div>
-                     <div class="item item-blog media" data-category="permaculture">
-        <div class="media-body">
-                        <h2 class="media-heading"><a href="../../../permaculture/essai.html">Le sol vivant</a></h2>
-            <ul class="inline item-infos">
-                                
-                                
-                <li><i class="icon icon-calendar"></i> Le 07/06/2020</li>
-                                                <li><i class="icon icon-folder-close"></i> Dans <a href="../../../permaculture/index.html">permaculture</a></li>
-                            </ul>
-            <div class="clearfix">
-                .
-<meta name="viewport" content="width=device-width, initial-scale=0.75"/>
-            </div>
-    
-                        <p class="read-more">
-                <a href="../../../permaculture/essai.html" class="btn-link"><i class="icon icon-plus"></i> Lire la suite</a>
-            </p>
-                    </div>
-            </div>
-                     <div class="item item-blog media" data-category="permaculture">
-        <div class="media-body">
-                        <h2 class="media-heading"><a href="../../../permaculture/le-jardin-experimental-de-notre-association.html">le jardin expérimental de notre association</a></h2>
-            <ul class="inline item-infos">
-                                
-                                
-                <li><i class="icon icon-calendar"></i> Le 04/06/2020</li>
-                                                <li><i class="icon icon-folder-close"></i> Dans <a href="../../../permaculture/index.html">permaculture</a></li>
-                            </ul>
-            <div class="clearfix">
-                en cours d'élaboration
-
-            </div>
-    
-                        <p class="read-more">
-                <a href="../../../permaculture/le-jardin-experimental-de-notre-association.html" class="btn-link"><i class="icon icon-plus"></i> Lire la suite</a>
-            </p>
-                    </div>
-            </div>
-           </div>
-        
-    </div>
+                  </div>
                 </div>
-                
-                                    
-                                <div class="span3 sidebar accordion" id="sidebar-two">
-                                                                                                                                                                                                                                                        <div class="widget widget_menu">
-                                                                                                <div>
-                                    <div class="widget-content">
-                                    
-<!-- DC Divider CSS -->
-<link type="text/css" rel="stylesheet" href="http://environnement-leforest.e-monsite.com/blog/do/tag/permaculture/dcodes/divider/css/dc_divider.css" />
-<!-- DC Divider CSS -->
-<link type="text/css" rel="stylesheet" href="http://cdn.dcodes.net/2/divider/css/dc_divider.css" />
-
- <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&amp;display=swap" rel="stylesheet" />
-<script src="https://kit.fontawesome.com/c2521c5cf4.js" crossorigin="anonymous"></script>
-<p style="font-size:0.85em; color:green"><img src="../../../../medias/images/logo-levert-t-1.png"width="80" height="80"
-style="margin-top:5px; margin-left:5px;background:transparent">Leforest environnement</p>
- <!-- DC Divider Start -->
-  <div class="dc_divider4" style="width:100%;top:5px"></div>
-   <ul class="nav">
-        <li class="nav_item item_1" style="margin-top:-2px;padding-top:0;padding-bottom:0" >
-         <a href="../../../../index.html" class="menu_item" > <i class="fas fa-home"></i>  Accueil</a>
-               </li>
-                    <li class="nav_item 2"style="margin-top:-2px;padding-top:0;padding-bottom:0">
-         <a href="../../../../pages/dossiers.html" class="menu_item" > <i class="fas fa-book-open"></i> dossiers</a>
-               </li>
-            <li class="nav_item item_2" style=";margin-top:-2px;padding-top:0;padding-bottom:0">
-         <a href="../../../../pages/contactez-nous.html" class="menu_item"style="line-height:0.5em;margin-top:-2px;padding-top:0;padding-bottom:0" ><i class="	fas fa-at"></i> contactez-nous</a>
-               </li>
-            <li class="nav_item item_3 "style="margin-top:-2px;padding-top:0;padding-bottom:0">
-         <a href="../../../../forum/index.html" class="menu_item" ><i class="far fa-comments"></i> Forums de discussion</a>
-               </li>
-            <li class="nav_item item_4 "style="margin-top:-2px;padding-top:0;padding-bottom:0">
-         <a href="../../../../pages/association.html" class="menu_item" ><i class="fas fa-handshake"></i> association</a>
-               </li>
-            <li class="nav_item item_5  "style="margin-top:-2px;padding-top:0;padding-bottom:0">
-         <a href="../../../../annuaire/index.html" class="menu_item" ><i class="fas fa-share-alt"></i> Annuaire</a>
-               </li>
-            <li class="nav_item item_6  "style="margin-top:-2px;padding-top:0;padding-bottom:0">
-         <a href="../../../annonces/index.html" class="menu_item" ><i class="fas fa-bullhorn"></i> annonces</a>
-               </li>
-                <li class="nav_item item_7 "style="margin-top:-2px;padding-top:0;padding-bottom:0">
-         <a href="../../../album/album.html" class="menu_item" ><i class="glyphicon glyphicon-camera"></i> Album</a>
-               </li>
-           
-            <li class="nav_item item_8  last_menu_item"style=";margin-top:-2px;padding-top:0;padding-bottom:0">
-         <a href="../../../aux-environs.html" class="menu_item" ><i class="fas fa-globe"></i> aux environs</a>
-               </li>
-         </ul>
-
-                                    </div>
-                                </div>
-                                                            </div>
-                                                                                                                                                                    </div>
-                            </div>
+                <div class="col-lg-6 col-xxl-4 mb-5" id="it2">
+                  <div class="card bg-light border-1 h-100">
+                    <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0"><span
+                        style="color: #333333;"> </span>
+                      <div class="feature rounded-3 mb-4 mt-n4" style="background-color: #3b27db;"><span
+                          style="color: #ffff99;"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="32" height="32" fill="currentColor" class="bi bi-activity"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"></path>
+                          </svg></span></div>
+                      <div class="card img-fluid bg-transparent" style="width: auto; margin-left: auto; margin-right: auto;">
+                        <img class="card-img-top" style="opacity:0.3" src="file:///home/florian/leforestenvironnement.github.io/Lefenvt.com/medias/images/compost.png"
+                          alt="Card image">
+                        <div class="card-img-overlay" style="top: -15px; height: 247px; left: -10px; width: 318px;">
+                          <h1 class="card-title titre"><span style="color: black;"><b>Le
+                                compost </b><br>
+                            </span></h1>
+                          <p class="card-text"> </p>
+                          <ul>
+                          </ul>
+                          <b><span style="color: #006600;">Le dossier</span></b><b><span
+                              style="color: #006600;"></span></b><br>
+                          .
+                          <p></p>
+                          <div class="dropdown container-fluid"> <button class="btn btn-primary btn-lg dropdown-toggle position-absolute top-0 start-50 translate-middle-x"
+                              type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                              style="margin-top: -21px;">En savoir plus... </button>
+                            <ul class="dropdown-menu ">
+                              <li class="titre2" style="background-color:yellow;color:black">LE
+                                COMPOST</li>
+                              <li class="dropdown-divider" style="border-color:yellow;border-width:3px"><br>
+                              </li>
+                              <li><a class="dropdown-item" href="https://leforestenvironnement.github.io/Lefenvt.com/pdf/jardinage/pdf.html?name=../../pdf/jardinage/compost.-.tout.sur.le.compost.le.connaitre.le.faire.l.utiliser.-.230p.pdf">Tout
+                                  sur le compost</a></li>
+                              <li class="dropdown-divider" style="border-color:yellow;border-width:3px"><br>
+                              </li>
+                              <li><a class="dropdown-item" href="https://leforestenvironnement.github.io/Lefenvt.com/pdf/jardinage/pdf.html?name=../../pdf/jardinage/Compostage%20-%20Processus%20et%20moyens%20de%20contr%C3%B4le.pdf">Processus
+                                  et moyens de contrôle</a></li>
+                              <br>
+                              <li class="dropdown-divider" style="border-color:yellow;border-width:3px"><br>
+                              </li>
+                              <li><a class="dropdown-item" href="https://leforestenvironnement.github.io/Lefenvt.com/pdf/jardinage/pdf.html?name=../../pdf/jardinage/Composter%20au%20jardin,%20c_est%20facile%20%21.pdf">Composter
+                                  au jardin</a></li>
+                              <li class="dropdown-divider" style="border-color:yellow;border-width:3px"><br>
+                              </li>
+                              <li><a class="dropdown-item" href="https://leforestenvironnement.github.io/Lefenvt.com/pdf/jardinage/pdf.html?name=https://leforestenvironnement.github.io/Lefenvt.com/pdf/friche%20renard/friche_renard_g%C3%A9n%C3%A9ralit%C3%A9s.pdf">ormus
+                                  definition</a></li>
+                              <br>
+                              <li class="dropdown-divider" style="border-color:yellow;border-width:3px"><br>
+                              </li>
+                              <li><a class="dropdown-item" href="https://leforestenvironnement.github.io/Lefenvt.com/pdf/jardinage/pdf.html?name=https://leforestenvironnement.github.io/Lefenvt.com/pdf/friche%20renard/Registre_Enqu%C3%AAte_Publique.pdf">
+                                  méthode fabrication ormus</a></li>
+                              <br>
+                            </ul>
+                            <br>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-    </div>
-    
-        <footer id="footer">
-        <div class="container">
-                                                <div id="brandcopyright" style="display:block">
-                    <ul class="inline" style="display:block!important;visibility:visible!important;">
-        <li><a href="http://www.e-monsite.com/?utm_campaign=network_bottom_link" target="_blank" title="Créer un site internet">Créer un site gratuit</a> avec e-monsite</li>
-
-                <li><a href="http://www.e-monsite.com/contact/signalement-de-contenu-illicite.html?url=environnement-leforest.e-monsite.com&amp;page=http://environnement-leforest.e-monsite.com/blog/do/tag/permaculture" target="_blank" rel="nofollow">Signaler un contenu illicite sur ce site</a></li>
-        
-      </ul>
-   
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4 mb-5" id="it3">
+                  <div class="card bg-light border-1 h-100">
+                    <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0"><span
+                        style="color: #333333;"> </span> <img src="file:///home/florian/leforestenvironnement.github.io/Lefenvt.com/medias/images/engrais_verts.png"
+                        alt="" style="width: 42px; height: 44px;">
+                      <div class="card img-fluid bg-transparent" style="width: auto; margin-left: auto; margin-right: auto;">
+                        <img class="card-img-top" style="opacity:0.3" src="file:///home/florian/leforestenvironnement.github.io/Lefenvt.com/medias/images/engrais_verts.png"
+                          alt="Card image">
+                        <div class="card-img-overlay" style="top: 0px; height: auto;">
+                          <h1 class="card-title titre"><span style="color: black;"><b>Les
+                                engrais verts ...</b><br>
+                            </span></h1>
+                          <p class="card-text"> </p>
+                          <ul>
+                          </ul>
+                          <p></p>
+                          <div class="dropdown container-fluid"> <button class="btn btn-primary btn-lg dropdown-toggle position-absolute top-0 start-50 translate-middle-x"
+                              type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                              style="margin-top: 10px;">En savoir plus... </button>
+                            <ul class="dropdown-menu ">
+                              <li class="titre2" style="background-color:yellow;color:black">LES
+                                ENGRAIS VERTS</li>
+                              <li class="dropdown-divider" style="border-color:yellow;border-width:3px"><br>
+                              </li>
+                              <li><a class="dropdown-item" href="https://leforestenvironnement.github.io/Lefenvt.com/pdf/jardinage/pdf.html?name=../../pdf/jardinage/les%20engrais%20verts.pdf">Engrais
+                                  verts</a></li>
+                              <li class="dropdown-divider" style="border-color:yellow;border-width:3px"><br>
+                              </li>
+                              <li><a class="dropdown-item" href="https://leforestenvironnement.github.io/Lefenvt.com/pdf/jardinage/pdf.html?name=../../pdf/jardinage/Les.engrais.organiques.-.F.Guerin.-.4p.pdf">Les
+                                  engrais organiques</a></li>
+                              <br>
+                              <li class="dropdown-divider" style="border-color:yellow;border-width:3px"><br>
+                              </li>
+                              <li><a class="dropdown-item" href="https://leforestenvironnement.github.io/Lefenvt.com/pdf/jardinage/pdf.html?name=../..//pdf/jardinage/le.brf.pour.gerer.nos.sol.-.Lgep.-.18p.pdf">Le
+                                  BRF pour gérer nos sols</a></li>
+                              <li class="dropdown-divider" style="border-color:yellow;border-width:3px"><br>
+                              </li>
+                              <li><a class="dropdown-item" href="https://leforestenvironnement.github.io/Lefenvt.com/pdf/jardinage/pdf.html?name=../..//pdf/jardinage/Fertilite%CC%81%20des%20sols%20-%20Cadillon%20Adeline%20-%20Fourrie%CC%81%20Laetitia.pdf">Fertilité
+                                  des sols</a></li>
+                              <br>
+                            </ul>
+                            <br>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4 mb-5" id="it4">
+                  <div class="card bg-light border-1 h-100">
+                    <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0"><span
+                        style="color: #333333;"> </span>
+                      <div class="feature rounded-3 mb-4 mt-n4"><span style="color: #ffff99;">
+                          <img class="card-img-top" style="opacity:0.5" src="file:///home/florian/leforestenvironnement.github.io/Lefenvt.com/medias/images/lombric.png"
+                            alt="Card image"></span></div>
+                      <div class="card img-fluid bg-transparent" style="width: auto; margin: auto;">
+                        <img class="card-img-top" style="opacity:0.5" src="file:///home/florian/leforestenvironnement.github.io/Lefenvt.com/medias/images/lombric.png"
+                          alt="Card image">
+                        <div class="card-img-overlay" style="top: 0px; height: auto;">
+                          <h1 class="card-title"><span style="color: black;" class="titre"><b>Le
+                                ver de terre, etc..</b><br>
+                            </span></h1>
+                          <p class="card-text"> </p>
+                          <div class="dropdown container-fluid"> <button class="btn btn-primary btn-lg dropdown-toggle position-absolute top-0 start-50 translate-middle-x"
+                              type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                              style="margin-top: -10px;">En savoir plus... </button>
+                            <ul class="dropdown-menu ">
+                              <li class="titre2" style="background-color:yellow;color:black">Le
+                                ver de terre, etc..</li>
+                              <li class="dropdown-divider" style="border-color:yellow;border-width:3px"><br>
+                              </li>
+                              <li><a class="dropdown-item" href="https://leforestenvironnement.github.io/Lefenvt.com/pdf/jardinage/pdf.html?name=../..//pdf/jardinage/Mieux%20connaa%CC%8Atre%20les%20vers%20de%20terre.pdf">Mieux
+                                  connaître les vers de terre</a></li>
+                              <li class="dropdown-divider" style="border-color:yellow;border-width:3px"><br>
+                              </li>
+                              <li><a class="dropdown-item" href="https://leforestenvironnement.github.io/Lefenvt.com/pdf/jardinage/pdf.html?name=../..//pdf/jardinage/Les-vers-de-terre-allies-incontournables.pdf">Les
+                                  vers de terre alliés incontournable</a></li>
+                              <br>
+                              <li class="titre2" style="background-color:yellow;color:black">
+                                La faune des sols, son écologie, son action</li>
+                              <li class="dropdown-divider" style="border-color:yellow;border-width:3px"><br>
+                              </li>
+                              <li><a class="dropdown-item" href="https://leforestenvironnement.github.io/Lefenvt.com/pdf/jardinage/pdf.html?name=../../pdf/jardinage/Georges%20Bachelier,%20La%20faune%20des%20sols%20%20son%20e%CC%81cologie%20et%20son%20action-1.pdf">partie
+                                  1</a></li>
+                              <li class="dropdown-divider" style="border-color:yellow;border-width:3px"><br>
+                              </li>
+                              <li><a class="dropdown-item" href="https://leforestenvironnement.github.io/Lefenvt.com/pdf/jardinage/pdf.html?name=../../pdf/jardinage/Georges%20Bachelier,%20La%20faune%20des%20sols%20%20son%20e%CC%81cologie%20et%20son%20action-2.pdf">Partie
+                                  2</a></li>
+                              <br>
+                            </ul>
+                            <br>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4 mb-5" id="it3">
+                  <div class="card bg-light border-1 h-100">
+                    <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0"><span
+                        style="color: #333333;"> </span> <img src="file:///home/florian/leforestenvironnement.github.io/Lefenvt.com/medias/images/association%20des%20plantes.jpg"
+                        style="width: 42px; height: 44px;">
+                      <div class="card img-fluid bg-transparent" style="width: auto; margin-left: auto; margin-right: auto;">
+                        <img class="card-img-top" style="opacity: 0.3;" src="file:///home/florian/leforestenvironnement.github.io/Lefenvt.com/medias/images/association%20des%20plantes.jpg"
+                          alt="Card image">
+                        <div class="card-img-overlay" style="top: 12px; height: 301px;">
+                          <h1 class="card-title titre2"><span style="color: black;"><b>Les
+                                associations végétales.</b><br>
+                            </span></h1>
+                          <p class="card-text"> </p>
+                          <ul>
+                          </ul>
+                          <p></p>
+                          <div class="dropdown container-fluid"> <button class="btn btn-primary btn-lg dropdown-toggle "
+                              type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                              style="margin-top: 155px;">En savoir plus... </button>
+                            <ul class="dropdown-menu ">
+                              <li class="titre2" style="background-color:yellow;color:black">Associations
+                                végétales</li>
+                              <li class="dropdown-divider" style="border-color:yellow;border-width:3px"><br>
+                              </li>
+                              <li><a class="dropdown-item" href="https://leforestenvironnement.github.io/Lefenvt.com/pdf/jardinage/pdf.html?name=../../pdf/jardinage/associations%20v%C3%A9g%C3%A9tales.pdf">Les
+                                  associations végétales</a></li>
+                              <li class="dropdown-divider" style="border-color:yellow;border-width:3px"><br>
+                              </li>
+                              <li><a class="dropdown-item" href="https://leforestenvironnement.github.io/Lefenvt.com/pdf/jardinage/pdf.html?name=../../pdf/jardinage/Associations%20v%C3%A9g%C3%A9tales%20illustr%C3%A9es.pdf">Associations
+                                  végétales illustrées</a></li>
+                              <br>
+                              <li class="dropdown-divider" style="border-color:yellow;border-width:3px"><br>
+                              </li>
+                              <li><a class="dropdown-item" href="https://leforestenvironnement.github.io/Lefenvt.com/pdf/jardinage/pdf.html?name=../../pdf/jardinage/Joualle_Wikipedia-Fr.pdf">La
+                                  joualle</a></li>
+                              <li class="dropdown-divider" style="border-color:yellow;border-width:3px"><br>
+                              </li>
+                              <li class="titre2" style="background-color:yellow;color:black">Les
+                                plantes dépolluantes</li>
+                              <li class="dropdown-divider" style="border-color:yellow;border-width:3px"><br>
+                              </li>
+                              <li><a class="dropdown-item" href="https://leforestenvironnement.github.io/Lefenvt.com/pdf/jardinage/pdf.html?name=../../pdf/jardinage/Jardinage%20-%20Les%20Plantes%20Depolluantes%20Purifier%20l_air%20De%20La%20Maison-fr-1.pdf">Partie
+                                  1</a></li>
+                              <br>
+                              <li class="dropdown-divider" style="border-color:yellow;border-width:3px"><br>
+                              </li>
+                              <li><a class="dropdown-item" href="https://leforestenvironnement.github.io/Lefenvt.com/pdf/jardinage/pdf.html?name=../../pdf/jardinage/Jardinage%20-%20Les%20Plantes%20Depolluantes%20Purifier%20l_air%20De%20La%20Maison-fr-2.pdf">Partie
+                                  2</a></li>
+                              <br>
+                            </ul>
+                            <br>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-                    </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="header3"> <button class="accordion-button btn-link titre2"
+          type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true"
+          aria-controls="collapse3">Le Jardin de Leforest environnement</button>
+      </div>
+      <div id="collapse3" class="collapse" aria-labelledby="header3" data-parent="#exempleAccordeon">
+        <div class="card-body">
+          <div id="accordeon">
+            <div class="card">
+              <div class="card-header" id="hd1">
+                <h5 class="mb-0"> <button class="btn btn-success titre2" data-toggle="collapse"
+                    data-target="#clpe1" aria-expanded="true" aria-controls="clpe1">Où
+                    se trouve le jardin ?<i class="fa fa fa-caret-down" style="font-size:36px"></i></button>
+                </h5>
+              </div>
+              <div id="clpe1" class="collapse" aria-labelledby="hd1" data-parent="#accordeon">
+                <div class="card-body">ADRESSE: Chemin des jardins; rue des
+                  Flandres( derrière la poste)<br>
+                  Jeudi matin de 10 heures (sauf avis exeptionnel). </div>
+                <div class="embed-responsive embed-responsive-16by9"> <b><span
+                      style="color: #3366ff;" class="titre2"> <iframe class="embed-responsive-item"
+                        src="https://www.google.com/maps/embed?pb=%211m14%211m8%211m3%211d10164.662193773549%212d3.063755%213d50.438017%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x0%3A0xb5dc376c13a86fcb%212sjardin%20permaculture%20LEFOREST%20ENVIRONNEMENT%215e0%213m2%211sen%212sfr%214v1664987094960%215m2%211sen%212sfr"
+                        style="border:0;" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        width="600" height="450"></iframe> </span></b></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="hd2">
+                <h5 class="mb-0"> <button class="btn btn-outline-success collapsed titre2"
+                    data-toggle="collapse" data-target="#clpe2" aria-expanded="false"
+                    aria-controls="clpe2"> Installation <i class="fa fa fa-caret-down"
+                      style="font-size:36px"></i></button> </h5>
+              </div>
+              <div id="clpe2" class="collapse" aria-labelledby="hd2" data-parent="#accordeon">
+                <div class="card-body"> Pour arriver à une terre cultivable,
+                  plusieurs solutions sont possibles. Nous avons opté pour une
+                  méthode lente : l’occultation par bâche.<br>
+                  Un des plaisirs du jardinage biologique sans travail du sol
+                  est d’arriver à un sol prêt à planter avec le moins d’efforts
+                  possible. C’est pourquoi la technique de l’occultation est
+                  notre méthode favorite. En plus de ne nécessiter que peu de
+                  travail, c’est la plus écologique ! Voici en quoi elle
+                  consiste. Une plante a besoin, pour vivre, de lumière et
+                  d’eau. Si vous lui enlevez une des deux, elle va mourir.
+                  L’occultation consiste donc à priver les plantes de lumière
+                  pour les faire mourir et se décomposer. En résultera un sol
+                  propre, exempt d’adventices dans lequel vous pourrez
+                  directement planter ou semer ! Comment occulter ? Le mieux est
+                  de commencer 1 an en avance. Pour « tuer » une prairie et
+                  avoir un sol prêt à planter/semer, il faut l’empêcher de voir
+                  la lumière pendant 8 mois minimum en période poussante (de
+                  mars à octobre). Si vous occultez pendant une période plus
+                  courte, il est probable que certaines plantes résistent et
+                  repartent de plus belle, comme le liseron qui se fera une joie
+                  de venir tout recoloniser rapidement. Et parfois, même après
+                  un an, le liseron est encore présent… Pour ce dernier, il
+                  faudra d’ailleurs s’armer de courage pour s’en débarrasser
+                  dans les zones potagères. Certaines personnes ont donc décidé
+                  de jardiner avec lui. Cela peut fonctionner, tout dépend de la
+                  force du liseron. <br>
+                  <h3> C’est l’option la plus efficace de toutes, <span style="color: red;">mais
+                      elle fait rentrer le plastique dans l’équation, ce qui
+                      n’est pas au goût de tous et c’est compréhensible ! </span></h3>
+                  <h3> </h3>
+                </div>
+                <div class="card card-body"> <img class="img-fluid" src="https://lh3.googleusercontent.com/pw/AL9nZEUnKR8qfChwilyKiod9jOhq4vTs1U8vRKwkpB1Bf_mkQBjDDKueW6hHs5ovg7NcwBShmelZ09J6WQvEpVfU5jk0QTbVGKAoEmjUQ3RosyJJ36QUB6HOf6Sh7fMrjpocGQ7WHGwo9DQZag4mkxCoQ0U9=w855-h570-no?authuser=0"
+                    alt="" style="width: 639px;"><br>
+                </div>
+                <img class="img-fluid" src="https://lh3.googleusercontent.com/pw/AL9nZEVN2RVqA8ZiXE98DnJ4lb1hOE8PiRPES14j0AZVmQr_pNldiCnRle1KkFNVL8h9wJcK4USxJ7HgcNtIVuksv1k6BIHWQnQEbpcuMRSQHD7C8QhJkRTMzeW4tQAUb09zE5Xow2Ulf24mtCyOTsc0jZJE=w855-h570-no?authuser=0"
+                  alt=""><br>
+                <img class="img-fluid" src="https://lh3.googleusercontent.com/pw/AL9nZEUokMA1NwQvrsL4IPOHLY_nsq6lcMZ153qvHPYJfZ6C7rWeHMPzaSv3L_WHqkeKrj_sB_GtGGB-qGWmsswHWJuIqp826smwSypWFjyzkFK3iTNbAxBvP7Ixk8IlRI1RBuQs4AxmHr7i9Ip1iMZ7wbSG=w1015-h570-no?authuser=0"
+                  alt="" style="width: 650px; height: 272px;"></div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="hd3">
+                <h5 class="mb-0"> <button class="btn btn-success collapsed titre2"
+                    data-toggle="collapse" data-target="#clpe3" aria-expanded="false"
+                    aria-controls="clpe3">Premières cultures <i class="fa fa fa-caret-down"
+                      style="font-size:36px"></i></button> </h5>
+              </div>
+              <div id="clpe3" class="collapse" aria-labelledby="hd3" data-parent="#accordéon">
+                <div class="card-body"> Mise en place des premiers plants...<br>
+                  Nous decouvrons le sol au fure et à mesure..<br>
+                  Et nous paillons.. <br>
+                  Le paillage est l'un des principes de base... </div>
+                <div class="card card-body"> <img class="img-fluid" src="https://lh3.googleusercontent.com/ejroWnQHUUJf8Eb4gxw1nekZPfO2momLGNEfGQi1ipjs56Q0EgFb6or1iYr5APfhl-knYMZrJ7n8AWgR63TfD85w3e5_SfvLkleTG1N1ucif8-h_p_pijiNxO8QHrpiFotvUiOTXSzaDU3fLq2tFOLPqur54KqYF8Mp_DdVG3-Ym0TifPjyfP899Zg7vF2ZvIwoutdkMRpDO-Ee2w-YlHNmDTjXL8pB-g7B-yKuJ8WL-Qjz6gaFAkAlakWZlR_7xeYDg0GUHDUc-kPEw1G-T9y-2mL8_drmn5FiYvBra_fpaCXy_2im0T9xKrmXvxATs-RrWzQ71ioIieG2puMS0ljixoH1IWDL1CZJi-hN6YZqU7A70ILjEqurBb6AoAtOGrA_pNHIThIckmH4eBPTbaTARXIdISCdezQXnTIHWFwjavfpegkGkFwrbE21fPWCfN63SwBTqwiKkiOdqIm2zZ1U8vD70CsIef4HFaGZhxNLlYvlwvR_hee2AU3URCyl26oBrc4aCRVtUijJByzMOre0BDV_pIfaCdKC1OReWgtYA9q-U2WaSC9b7UwsE06-TxA9kNC0gjhAjND6YQjsBuYxNKoZZyjZ_JMfPuL2zMouFnipf7cq_rq9eo2rA3B6oXy_6Kg-mLlunbKYitqBy2g-hPHvF6uNhENgkKMzYWEJgMZI7u8vOIW_s_intTbih3VGUvkVxQfTt1AeaUBn7I8VzkKIILpteBK_OEc3TxwlKJ5yOM7Yohejd0X_Ou6GmQkbjTL_8ZxcbBK0ruqIPMBQ-r4iQg3XGZ07YAu5BZyls_4T423TCO5r0zzaq9AlUpjoyPWg8h060oP2StCAviKrNuFbFavQZv1OmZPemY5dV9KIZ8fx_wycSFykIAT8HBmyP7eqnbeafkzQXDIdbzNnDyOb5u-_g3t-KQW-O=w855-h570-no?authuser=0"
+                    style="width: 639px;"><br>
+                </div>
+                <img class="img-fluid" src="https://lh3.googleusercontent.com/CMOAF6gWHDZ7TPo0sLzeY6kcnO_j-hX-lw43tOAdPAb0JJPP1AXMXUDQREuP3A6a-c8XlR1BAYOzIub7dfA7YWib9c9iDrZrUxDb00LfN1VGI_f1na63zrwvqH6C4dF1Dhk3HQHoypYy7d_4ox8mw-veL5hvYIKdz5EIrq7C1Sh3BD7so_JH3AICoEesRGtVKO8L9MHV9tuoxoEbc2lI5SakOtaosGK_dw1gnKdv10zjeWviR5FJs-QArKdgwF6r8uvxYwS_V0jHbizYZU_j-hKWAMgg7aSB0miBvaDHjAHppawqxMmQbYpiQ9MrdKej2mi6k66QhlouplHX-kqAvQQePIIKu5ePyGAc0WLzfo4Pb6ThzQC1VEX7ttZ4jNdn8lwsumrkwoGD29CDiWMdehTBSvpsgIIk21YfpSDwrOsfVdiG4zOSxopr6GojXEKVNiOjFgFZu7Ybe8y2kx24rnJTutABOrMJAVVhMLX3GunwGP2oHcz9ltIOidJV1nicGfRsD9y1DAJ7rViUpdmrleYfiwPMxnxoQviawekBveCb0JN-ksSsiqqdD7ikyILq7zzmaOV6PN_nXc4_cIsEoSfhzcXWcG1EiOO_CTYL3CWlC_1uHldfMONwbM8NSk1S49sLOxYmFyoYI5rdywrVW2mFvWY0tXMxCjfEDGi7KmKUS1Y4mjXdbsJT3rtIzEgr0JK2Al3NZmDpMPTRBR94J_bP_kk6AYHes1-gMVvM4M7IYC0T6I7fQOGY5Bn2Q7Vr2P5dF5es_cpgx2P9-kTk9fAZ3ryQDIJN89xirjw5K5p_bXCE35ELcgf6_t0N2eSCroty6hHP9FGMwaUhMOySx7UaodAzpyoA3VwSiqD4_ByNeQCgbgYHIAHxnniObc8L-ZSDD003HkxYQfNSDsIWTsMyKXEV9aLwOZqbMa8l=w855-h570-no?authuser=0"><br>
+                <img class="img-fluid" src="https://lh3.googleusercontent.com/KYd4843bPiiW0WpzTZSq-ETK-I_oN8_S7elSAIB-Miee2NVOPkeHzWU2fytmlpHmvNtMkKPf7FisaxHwABQdktpbNxo74v2X2vfj3C1w6waiU02TtcnkVhP49r0g2ZTMiSmgosc7pJ1iWH5hogEokSipU_CthW4URTPDFbZFC1aqYqkA8nqcAGzTbj08439c-sw2oGqPm8BKtVCw2AIHpsRizsQhVQ4NEiikAH0vDD5rdlu3brfs7SoytydsdT9Ydme-4-gMS9_S2gmrtEZm9KyUsqTJSnM4nyL26RseF4vwh_wlg8HTTAqMfwFFQQhn72qHFu5gzoPHat-6m_qdbg-7OLmzi_OtKqtk7u4bDHuwD6w-0ndME4QzBYzfNwCRxnucghyYKmSLQZJgk0Xv0LZPj4Y5RUPraz99rF--IjqixlPB2DFxl-G0Pz21wIJUiytO-K4_3x5akHePyw768yGG-JASc7Cv9fKx1w7nGTuxdIrGMn7f5-XuDABwTawWajgYoAUAO0TaCAVFDLQs4Xk2yxmG44p8C1Jvmk0SGKbb0N3FArTUhqRClSTB0KORTupCwDycXtoLRuYYmRXiax03k3axyqXYbMX0Zd936g_RrvwiKvLhkiZKAVBS1dCKuwfWNSi3roZtL9p1dG2PgdO35GULtZZEYKQbavbdLxW7exZEI6YB3rokKy313286nANDGvQgLS2rRMmwaZ7OA1CGeiHBuUi8M30PjFq-AQML2UIqUmogn7hPe19PUufWEctUFqTl5mgCUiUg00zdTRhZmNAstPZg7H2QysAUVj30Ak1LZ31qx2I8B0tA79Ac28zIqOg0B1Bevr4mUIwCqBUDpOWUd-X9R_em77h4NsnhuEUM5QzpQfWweQTI6q_DoJEhQm2F9VH5NmaA7bEYbAkl6uDH0dQ-DbLwCj9-=w855-h570-no?authuser=0"
+                  style=""> <img class="img-fluid" src="https://lh3.googleusercontent.com/sSHfQ03pNK5MntLLNrq9IFecEdnKHm6DI9yhYB8odIaW20KmM7kGYedgsgtgnpGxwrKG_CCl1ukPDWYoAsdOR48Odm14gmUz_bQddF1jeXwduLlSEGQp45yeDwbK1q1bVV9rseqfTQGmR1scAzdUi2rbza0frMRKrihKwHOjfd8PRC0CtkPXoWvTtXAYrqIIC7PirzDQBNtpogtLr890edXZ4RdPrGOdEglDv9_8XcPQR1JOp6JZYmboR8c1NPJg7nBECbhhX1bek_F4Seg5QxI9RgzUWvjBOutrdXYMNOyyUW9M9nXkO-bjKomK-zuA5wqcJmi1ll0Z7IhKNM6_TjHQz5qti6iwWGR0VAHV6TD_h6TfGfid6uW2slAImvGAn2PJPAUAZ42uUFhvkM_8peLyoj6hnbm-22rJEnBhmLYIQjeqzrEAYQhJhBEh6lbjYE1wHyuQqaPucj1WW4U0ofFIO1cBBR7bFylGOt89q_vsGuaXtKyULnDqymO_z-nil64aMjqpbGyCLPVWnY-tFRrqMutR_pTMsCQzWSCy635HsAgWzeji1gVBE4ryEGOq5s6QkhSxQQy_PeRAk-sj822c7M6gJ2kRIrPhNR55VtlBbsb4qdbHQ_S25yxJGxIsRkt8iqsaiUbLxcVYH4aNshEic726oK3jKXgBoQHq26CqKqwX4SHHYKI37fuXfsXIQWm7eagJHwcaZVr8YNaX0yVWvVXqTgsu0jKdnHUjYH4Oxl92Yv7S-EGCmWfwE_jxL2FGyPV2LBoujvc3ZCJwMOTRIvwnRJC2EOxsezcYGVzWIVSJrNt20wxAUw40s21OMPOncD1AnHmtqNaaaJwX4pgZQXqBARdHkB3Vxrl9GIHaVbTrxh5I3MisyNhbco2QuEoec_vaoT1wVWAiACpUKnm4CPKe7VU3XdNzfpJT=w855-h570-no?authuser=0"
+                  alt=""><img class="img-fluid" src="https://lh3.googleusercontent.com/XBe2ksDUMdhJNN8sxcycwpGGlSeKY1aSK-XxOrpF_bfd3yX8dVQ26R3L7Iv4pnAK4PWIf_1Gpwqr1XU8bm-HuF3FWcOIIN-eSJAME5mT9MYGUHN6-S-Q6y8Da8n2qWBp7F-j-ArsK-s3AlhFwc1WZ6roq540c01bvbAQOhqfbBRc3qMtGCQKPcbR675b_H36-WantgXF6vuaLbeORhJg9r0Uk9y2WCwyM7_A0oOELDUaQmWbXmYTUkr-p0NoJYEIsh2BXaaW5t9v875tdMUQXOdG52COXgv7adLD61TAdJwcgId7bQU8sPWkRo-fFm6VqleBPgkB58uo89yCEv0v5JFg7SdnsGR-PSLcsTsHNMr91jVa3TJjprFqcBjoYKb1hKYa28HOjJmkDKJH8wZbp-kzx8GrNYhpwzuQ6E2Fu5kcVae_xBbnXd8t83jDmmdtG2dBRMOJWTwP_3g_sCn8q8yBN3nEVoPVCkydH-rTcXxX6O99tFnabq4Wp0bdI0HcscaClOfiK8OcChWtfW65PEZhQR7XUAC0Tn2lLdjKUxb5eRf5aMb7B88TsEFxg4cFV9mKp_NsnX3Y2O1RQhZC9G4IbCoGm1LTW-6IFcbO8k-NwyR16adey0H8h7KM8uK0xTBqol1XYaBo2NQnH7nPeaKSHCKfirZ9zPDY7UXtKzr7ENkgzfttW8c3JK4nWq10nEhOj-vPchQJohLBxFd-smkfG_xQBN6c-0fsWp6mooLPzb5RnxFpIGTi4hjnVlVoGU4r2x6kBLazFkSsFolN4jkoIbdEYaqIi4mm1WAKuk52DcWLOdZuKRtgscvfc7TH6n8uLZI0vvgBQ8UfqcD_FuTO9k9O2neG-faqRm4T-YVhamdpYI5JoFoacsX97rJvbb3s0zwR4pMVe8yiZJCzDtZPtZ0Uwc6SgWQTWcdV=w855-h570-no?authuser=0"
+                  alt=""></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="hd4">
+              <h5 class="mb-0"> <button class="btn btn-outline-success collapsed"
+                  data-toggle="collapse" data-target="#clpe4" aria-expanded="false"
+                  aria-controls="clpe4"><span style="color: #0056b3;" class="titre2">Premiers
+                    résultats <i class="fa fa fa-caret-down" style="font-size:36px"></i></span></button></h5>
+            </div>
+            <div id="clpe4" class="collapse" aria-labelledby="hd4" data-parent="#accordéon">
+              <div class="card-body"> Apres une année de jachère, les resultats
+                se montrent assez satisfaisants.... </div>
+              <div class="card card-body"><img class="img-fluid" src="https://lh3.googleusercontent.com/RUBYbf33FMOFX_gks7dtaAqOXni8-5ZsHXIPZ1GsjUkxfc80_HB6NcPVEhptVopaPu9qY37U5mg4e2Re4oXDqoSljFayKZj2BtpgFudBx4U4gx1p5mkZiwF8s1NxU44oLZOv258Cd3QYtfeqmrFSin2QgzDHt3NuSkC8ULcCuzIsCkUu3pPEITK5g-ZQFfirz_QVTUgzKH0ZT1DqHwEhX3hL9CDI2YQ8-_oZ7b4HcAAvnP5Qf-xO2RX5t6ekFOYcbokNqN_9AZ19pm1JbOTQ0qrmsoXKOo6M3m-_CpKmnhlRyXdVXyvuzUhaGlHM5nNJDaYblix_1Fy-jrmb15JhQ1PRwEwu-fPqWOVxg1N9IyMboIo3Q13DXjCXTe8tFKo3tOYZP2BWxABxL9xEybMMjIgbCXuAcC_LQda6mK1rlbaoQzTT6oVOA5iyfAuuTu_Cel-l_mw3UmdZhQFG694EZcOgdbPC912Pm7bSgA4RX72PcCtc3frz84ezbn7p4edakhzgNMUkfgTX55SDWR0_KCY76TM-gXS6gurrh9QTm_QBWUWCMkuq95SqEFfbT7-t9fNbeUau8RL77SlgE2Z0tuWB2SaW7OhbEJKUOGfbApg_S1wUWiH8HS9ldp2RdoIKHDWD20yP61ZKpu2-dzNqJXdyF7GSeAoUb93Kx908iUdz5ExNufvPcIiGEgFJpS08CwQ-4beA04dM9M2NldD_BhnpnFUT8vlDqyNAwM1MJ19diWVBw8O9MX95niBA21eAcxZv96kyeaGXOgmpwlDdxpB_DNdvhUkn4ftTs49UvoiZa19Y0H2OiYRK0N41nmVe4g9MriyNGyht7lmEbkWKg_DauUIvzj8cT_NW597_YcPbcvUE5AIBf1pYbk6PK8jrzZw9wgmgHjuToduJblq5s_2Bj3TAzlMFaSPx2wnx=w855-h570-no?authuser=0"
+                  style="width: 639px;"><br>
+              </div>
+              <img class="img-fluid" src="https://lh3.googleusercontent.com/RUBYbf33FMOFX_gks7dtaAqOXni8-5ZsHXIPZ1GsjUkxfc80_HB6NcPVEhptVopaPu9qY37U5mg4e2Re4oXDqoSljFayKZj2BtpgFudBx4U4gx1p5mkZiwF8s1NxU44oLZOv258Cd3QYtfeqmrFSin2QgzDHt3NuSkC8ULcCuzIsCkUu3pPEITK5g-ZQFfirz_QVTUgzKH0ZT1DqHwEhX3hL9CDI2YQ8-_oZ7b4HcAAvnP5Qf-xO2RX5t6ekFOYcbokNqN_9AZ19pm1JbOTQ0qrmsoXKOo6M3m-_CpKmnhlRyXdVXyvuzUhaGlHM5nNJDaYblix_1Fy-jrmb15JhQ1PRwEwu-fPqWOVxg1N9IyMboIo3Q13DXjCXTe8tFKo3tOYZP2BWxABxL9xEybMMjIgbCXuAcC_LQda6mK1rlbaoQzTT6oVOA5iyfAuuTu_Cel-l_mw3UmdZhQFG694EZcOgdbPC912Pm7bSgA4RX72PcCtc3frz84ezbn7p4edakhzgNMUkfgTX55SDWR0_KCY76TM-gXS6gurrh9QTm_QBWUWCMkuq95SqEFfbT7-t9fNbeUau8RL77SlgE2Z0tuWB2SaW7OhbEJKUOGfbApg_S1wUWiH8HS9ldp2RdoIKHDWD20yP61ZKpu2-dzNqJXdyF7GSeAoUb93Kx908iUdz5ExNufvPcIiGEgFJpS08CwQ-4beA04dM9M2NldD_BhnpnFUT8vlDqyNAwM1MJ19diWVBw8O9MX95niBA21eAcxZv96kyeaGXOgmpwlDdxpB_DNdvhUkn4ftTs49UvoiZa19Y0H2OiYRK0N41nmVe4g9MriyNGyht7lmEbkWKg_DauUIvzj8cT_NW597_YcPbcvUE5AIBf1pYbk6PK8jrzZw9wgmgHjuToduJblq5s_2Bj3TAzlMFaSPx2wnx=w855-h570-no?authuser=0"><br>
+              <img class="img-fluid" src="https://lh3.googleusercontent.com/8ZLlPreoaPW7Kt-L4Xg0kZlDRmrHx3y0CNwU7-s8N9HgyvOHIpeUj2Nfucq9Wv_Qoebv1PJYWxGld-4XggSFW7K2vSmWBMSmdGVnjs0Apn6uIv1388Q7QXHcTVQULP4LTyxTbkz14yxR3544yrVjO8I6JqW76o73hXpRPuWucH3EUF3ZFEMNP91iQBW8PEYvojLs3UTBSRrBU16Su8jj_a9nz3Ok1kUUhInx5ilqzejv7ZjGDWue0WB482Ma7Ti5OuJ9TeTJLMiKhsXAQsU9z1E0TVCinXMZFGHvV6WAquu2zHpmIjAi1RW-F8VhkY-lnAx1t_6fJVL6Fx53gE8dihDPW50qr8fOsJgH2aB1wFywEbMKwiXekNMx7XqhmFU7fboe3xTrXQioZ4a0VyDtTVLzlI3x3LQqplCIUxnhIT0Hi02aMMCv4jU0hABIe2H0geRYRTqOJnZ6c9hlfhEtiweFj_yL999Do5j0U53ECAlOpeplJm4Vvfevhhy-D268hLwDpneaNmnoIYAMPRgju5hA8sJq3wpLsEJNtl8Jrbc_h0HyxDxw8jSXP3mj--KDOyv6f3Ou8A5d6lnFsG8VmGRGI42BPRz0i84xv3ydmez_qDQqzRg5bUwgxSlPqUTxaUUAx7BrslXVfFmltQRAfTueCFfZeU--XjvMZ5Bn1c27qANpUzlUkZbCU9wC9xGW3c9H555A7CIMyOkCcb46hU4CqVVQQ1HQnfmUWwr2eJF9oSj2oZP9yrj8ej0iJ4iqotb6ZLlDNBVBy8W7s874xWqNYoHvWYL6yzExqFpRk8eojjDmFNBuDaQNiWni7MtR4W-BPPgdCY2nMLdMGTAIfWHXA9tRt-MdLZlmc0dIuLYMGkZdWvUeaxu3ThfaeH1Pvqf4OggC8TjomtPcNnvFZq2ViukZhCGXBgLZti0B=w855-h570-no?authuser=0"
+                style="width: 650px; height: 272px;"> <img class="img-fluid" src="https://lh3.googleusercontent.com/nnXFiU4JXVXAr0ZtMDyyvU5MpqM8WaTZDgXsYkt0K2wJj_nWDc0nk8_lHUgfye_hBt8E62rHzj-V3DLkNj5CBcbTec1NVQyjoEfu03qbr3wY9S1TKqzEBJJvsuLbIDc1lURPbHPFHeNwlk3rehRxOqrHoWv8c_aNQHjxTIRR8t0xdvC20oAfgpyLIxDh592aaYRnsOln9ak5YCyZqeyysV2glrSMa2qSB_LadzV3lSWFWNCAUAUpGkMGwfnhKX-PTA8n5p4ON2uk9CYtLqX46ycK62iJKbKnogL8teMg3QYIFos7mpbeOa6mOwhdeKzKjoRlG9m7wx28AHtJRL5l3Gz-HHgz7qEL7vn7WaXRu0e9Tox0ORvC86dUuJgqBOO12WrUcSXLYUd83wbi1d9ANt38fY0LmJI359eIPtydD95d-oEbW8kTrcs0cpUu7KXDKxwbUhbPRBubLWBE3Xaz7O9u_p88XnwOX2WlA6iYsalc7KV7cHH7W4f857HkA6IQOSj0eea6uqj6zQZ5ScjQCDQJcKxO1QE4guKnxZtUumg59LZ0xcblKObifFWGcoMBelr7ZmW1ei1abUsCknULKdsarjGjZnVX9UFm-kEgiVm1UQCol6bUbJL3_6tbJXmHpxG3yPqyE8tpxQNF7cjZsCq0qO9bnjOvLd5NbxgDSiUnWy9hYsznc2w-J8Ia6jVIhSWlDfppBqhOm-4-kekBFlSAt6Yxv_XkLhefgRq6snOcG--IHmBfKQJPtKYhmpZ9nM48FeZslBirtsrk0-rJ9Tcl1DPRnkwcNrXcIP-xxMBILazsPbPhKw_593EfSU0hnzo3a2-Qdhc0xxy52QVpoo_WLYiBSayhgemFGHXngqgGK-4LC6PRYreD53Ulfuba04kAo5x6nDfmsFJ6aPgBugljPE0rXKP-NpTqrQQ7=w855-h570-no?authuser=0">
+              <img class="img-fluid" src="https://lh3.googleusercontent.com/ZIG1I9TTQmK55hX14ejK-M9NqNi5Sodld2Az0vvayZJ0bEBykYcXEeM0Y88VhwDOQeaauj73iMkEvXMELU1Hf0VKTLA6Ckwao_ISCTqj6bLU13n2Ja3i1HrHxbpnYyfnOUB1zwuLxSmzrdE1xXrx5V66EM2Z4BcU79i4edUA7xDfBVHi_g9ifqok5s9qepf1V3gO-j9SI72nev09eLciml_TpOrBFoJqsBWs9NLnzEmf1EtCYmLz5oqgy-lPIBHOFzJSG7w6zYbHyqawTXhETqPqiWw7b-IxGKFARNRXnOcJ7SW2sR9tSb-ePkPg0Sy7XO-mK_lj-LxtGkxb_3uS1mAJETIS_Cyrb0jUohz5DGsFxCkvBDvi9UsxJ_oUN36xIOjC8C2z_rSB-34U4zYbXyVDaNctgW9A2i1LPdF9OaCrNCnA1bTh_RJmfluqgb-piN-Jn-Q-IzqAXcd54VBipKcL-CznP5Ht921m1Pv7eXPtblO6FDx2CatVC6G7mUwNTqeZszKzW9qFQTrqGXQ7rKy-1DAcQ7zcWMtQsgZFz51IKX6V80PBPsZ0JmH24lplFvilU_GYJkvhPg6tvuddHJ-3ol20xVU5quBYEQ23pFs4MkY0n6bk_ZNABMCzQtFMSfrxaHJDxHhnzs4Q3aVOgVkd5mGCRuuzU1v0kOprKxNz5aySGjbJvhQyeowVEkUrLec-UaQO3aojMJN2AKAoWxp7Y4OjL7LQjNkE_PHgqiBsyaHvMct8iWo2y4Kp7YEAS2BNqpM4hRDCnO1puaFFTMojAA-b2CeaFWscSs4Kt9qbBSzCEdrCv9a6hJDEKaHZ-Amhr6gEP31L2fihjDBc5zUrvC2kLjbgZtmzg9YbuE01xJPVpCm-cp8aEedl5gWH6_tWsBMk3JlFv0KmVP0N1P-c0ZFZOABjOcWRUaq6=w855-h570-no?authuser=0">
+              <img class="img-fluid" src="https://lh3.googleusercontent.com/UKgMkS50vuqBDI05pApA6r-LMeISmI5OpCv41oaSnyUxpf6URZk6xGbdc0y5Z8ZjcL-5Y_ngFY7d1F-hco7X3L1YaTyyv5vmKL0-D7rBhRhXkUVR3fmr_MGwLDoTLsUILdYdE48Du9JZTC43DtaFTCuFDsHAhaAGcXAvXGKoCSGvMzgO1TIo4nN2EJrIzO2puzI6b8GhzRDll002BQC1bOCMMATqOC8PMF9av7sXkXwjbtq8FRgS141u4Nd1GCb8eBtGyFcJrh-ColfuKrvb4hLy1EWole-l6SWsif9IVvif8J-q4IB8seWH__rqfC-9wPpqIelXQxraMt6b7HQfmUBqy_TAddskRxuy-BDg94Ypsec9Uix8rWUWTrEr7jsMhCoCgUg6_xuRiYGglD7EcCIjlTt4fxtBASzO4gpFbhp3gLRqkBvYWg_gXyJwFkIlhcOLVlHtOetc3jYHTYpYKRGUxHSNatB-3cJ1deySf659P17_E0G1qBBab6w-cpuk0Pe-8uLgb4JDgC7lF_RUubKNite_pVANm_KIXAjatg7smKBK9Jf9ogDtKRqmTgR608tpK8qBzIavFb79n4vVOTa21aNLpGVM_3-tjMnXsmWrs_oH1SCU0o3juk80-umDX759qF-yXOgM-oo4mQUlbKnpEdt2JeuCXEIfwRVB0eXkYcSHB4o7h4bCROHyp9bY49w2vQDC-qen02n6X1EL5sBDV4EA36YIHrOS674RrSOvrwqAl7KOmZcXzGvScCa3ssZ3qU3_ULv-oeehqy7YI6kJWd49xttRdCylt6J4rvEIz4iwriB8QDuSdHhWWYmN_bnBQp0hxZraRYk-dzFEWMHLPfAKkxzj49-nBABCFNsUxS6ci7y1h_jrRXG-f0PkMxPqrm5tWMB7xT5dxP7iBAh2pXkiMIcqR6s-GKBb=w855-h570-no?authuser=0"
+                alt=""> </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="hd5">
+              <h5 class="mb-0"> <button class="btn btn-success collapsed titre2"
+                  data-toggle="collapse" data-target="#clpe5" aria-expanded="false"
+                  aria-controls="clpe5">Evolution 2022 <i class="fa fa fa-caret-down"
+                    style="font-size:36px"></i></button> </h5>
+            </div>
+            <div id="clpe5" class="collapse " aria-labelledby="hd5" data-parent="#accordeon">
+              <div class="card-body"><br>
+                <h3> Et nous paillons.. Nous paillons..<br>
+                  Le paillage est l'un des principes... de... base...</h3>
+                <div class="card card-body">
+                  <div class="row "> <img class="col order-first img-fluid" src="https://lh3.googleusercontent.com/XADSKNAVdPD_PAiEJ3Kp-3QbO8yHPFwkxtwAKLKDarUcRRbomClZL5BGkUJDCrhodelDk35SJi_PhNDHbyz0g5bries4RCgGNP2xF-gRN4Ml3FZuukpT1-XkOW62hwsYYnzQtIkKBtO2xQf6uku3Kyq0rytvR_wbv4TIEXCX1GSgOTVVvC_aKjCA3RO6hNI0G5DZGutOWsCKJvsI0A2fPLA5g34-Hfor_2rMuXgnZ274LUb_xP8Z7S6FZKuhoZmB99QQyXvGETi3a-ClxYl-LSshcOHXPiYKjL8pmkllGZwbtiz9KU6Sld6itAXSt6ktXuGrLUeAQc0KvZVD1vU3mGgEt4E_AdBrZWTsAofQehMIekjj22w6ronTDc6OMB0-h_rIAS66dtv-F1l-peZLxBIgYDWQs1GtT46qBjJBLcPNggLtWUXWJyI__gOjFEUkwHd2snY6NW4uiXgv1taKlnC9g5MClMabYpgAJHGqG8IJlhoGvkAvPbe_Z-EOcx5cTvNRdygrogpjP5MDLY7qHwmj345rasdxMO3wmxgcA-mDevosgWSsN6sqBwfvTe4ybebOez2L-kyw3u6e01t0GrSpOIZCLUEOifMvztRipqQ-oeqfTGlbdRpw-20jIxZvx2_aMpLa3n0ySjJQaRz2pqsLKzlz27GQpMOmHAIwVGNysKwuTl88hKWvaUa2i_O5TImVXNjjnWjEHFKjaKi-g1WuI-bCQjfP_5ff6UOJrTkz9LmVuhFpNC-byh81PZIyR1W_bdIRyZOTSunR6ODfPjGasgBHlDFJoclSvlY1kgQBkU7B8DfFgqeLdbILpsUB6oMWf3XLJq7oYAVBbuA5J64cSb30otf7rik9m94JjAf6uKse6VwCD-I-Icz83cJlNuUb3bOLazPcWOiST9-XvJgXE6-B1YdtAlQGlsAK=s206-no?authuser=0"
+                      style=""> <img class="col img-fluid" src="https://lh3.googleusercontent.com/65H-jLQfaCrhS8eqfNJXbN1-a8L3s6DuecG8JkMgBqd34J0u9cvy-f6fAwKUCFh9laKQP_8LRKLFNzsDJfm4FLSIasj1TcjkI6Zln4Odxo1u391iOfv8pj3OwwXlWeGYs0IU1eXp2JzODdNMnhZ6h2AIUpEVjlIDdtJNkKUjM9FOncUWKphZll1dgAIhrfYoO3y3NLdPDWqjOBDvOShyIR4Jvd5zxmtPCgxlVVFFv7YFTA76Jap0oHgNcb-scGRRQiAjRZKCwJ1WewAwruPcDmi5B6GwJrbDUsxq1d15VdglyvgyV15soYo4RtFrrky5thhPnY8PbuaWQFX970CSGf_Eq1Uq0oA-Z6geT6OoKctsvesGSWdN7zo810Px2Ane3XSfpWZ1RZJmJoPkIyF-kb1oT4g3fH-TWPAx0u86ccwo7AvjpXbQPaUaFc4IoL_S12yLcoUWrHXJtIzp8IuV3YN32ovCor-wlOH0V7kNvxlBpwXzqFy0LI-C1N_g6bwanRsJZe_o4Pg5jRicsby_oZDxKStLIygMhwIgPENWrrff98UG31SnBfJksfwn7nGHZz1GrVwdepCYy0DwSa7k5dgZaGo7WWyrhnzDyH7ORen2I8vhGXfnav_v6oWBpIaZQwFqIpurKRRIZfae5QKALbUnBd8JZZaR3h27E1cDP-E8Be3CU1JUyFno6No6q2AayOigmgIn2rpNIbEiWyV3OTf0Dq32AtAgc-nnnOgULW_E86QMp8FQ21p_nYiJwlcS-gw1rk7tEXwG0T1iynMsn2u1lcK72dWXbysRrW2zYj4XINeKJUl_SmQJ9pWxW4gatVDCorEDJSsGuoqC6ZxYxzwl6WN8oHolzsammq4wWLpXdYVXz2cFLmp3q07bGinsullWqHyO6lS9cotjv_l_oMOBlXQj-M5aluI0f4y6=s206-no?authuser=0"
+                      alt="" style="width: 202px; margin-left: 20px;"> <img class="col order-last img-fluid"
+                      src="https://lh3.googleusercontent.com/o0oofG786oi2vsZAQquwabVqIxYE5c0otZhaqLmTNjOR7WWg6Pe5ejKsMabBzHilw_daNHQpdk0jGpbSp5yMXZxluA6wYxaKlzGVQtfhezTY1pMU9nO1SGsS4odSKLwU1o-hVIyjokOe9Nv35CNbhzD1ZPnYq_5xdFFjnzYM5mpvRsziXez5Q_73ofpOCr19ip11c_-Y20ew-5t5uft0Ud6m4GUcMCGnwSNVw_61RiEt9i4rIiJbeoN0MpJpsngySZiXF2tckaY6ulRW-y2b0tE8B-LY3f7bhC1hWgA21EbyhEjrbAmmWkcbj9t7d3f7hATPSp2WBFxRacqvpxBfh_iUsAyh7QoGiBzqr4QBRC-GKIJkYmEDNlcCLUQ03h9Wmoj_KhWbJnrPB4RCtHutsktIMpAeUQ_2MsjnglLLY-tFslK61_fhhuLD-bpnbDIdKrss4xnQ41e4aYnAgpXQ8PxesC_tw6nVxf1_YMP1aFpTXBD3A7ioB9H9JnfhQR_W8LCJ7H8n1-f9xngqJV0j7gU2V5_a-XdFBD1Zbe6U-F-Yf_Psqo-WGJfvyQ1ZeN6IOgDqCxaIeOUi4kukaAE4XjhlrDYI874j_1f138IPLMqEMID1U8f93I4wo8VyLci6SWTFHc9q0Ck7C8xTRUZDS9v2TXsnlfh8H04qufo8DUrMYcRFG1mySOrzs6l2G1t9wcztR0_yRymFGkqNDDWdIZkoOw2fIpDFHyXW2pTBmc2IqfmtuAX0Ub0199pzCUareYvpKltEAzGrxIwj_EhCOpMijZGA99iRl-0k93sJ7kxn152WVL_sgC5OhomyC1u-9_yuGk6gAUgfjsnWjEMmCtzqJss4mzVjMYSeWe1ZgU0Vfo2hFQ-dBJ2wnBAy2JLaDQ3xmbS5NsQVmkrLhUr0os0uXK2MFesSRNxXariq=s206-no?authuser=0"
+                      alt="" style="width: 194px;"> </div>
+                </div>
+                <div class="row"> <img class="col order-first img-fluid" src="https://lh3.googleusercontent.com/XJERV017ji35yhDALrHrr3dr3mwEr4Uy0RocU7tv8foKBdd3-CxQHzaaR5gnpQS5Z3tpAqc7xksspVfH8rKLEZPAXYszMh7igVIBTAdQJUafsP34-oKHr2pZYL5s5dPqdM2hfchHDrtJ78h1iHqUhrEamyegiJ6pk1jXitEGxrL_JK3fgOaSdDpvewqaxi72690J4B4fuRFZgHjWtctdUSo2X0FX53lTHUdct4yGW7a1edE8KFSYSwgUPzk7l73v_rDcMhbIW3jkFr2KvwgjGPszxIAqhzO8rcBRNLOb5Z1iN9t_kK7Wn0PHCg8sDacim5tZA7dYjmx50BymEaDF1m4AbjvoKMh39iTtgBFSDFwoGn9UsdHctgtABa4pgDLzSRc964n_080HENfLMERPI0ISUKDZS5rxXUOc_BNFsEj8r9gMQq9NTcsCp2JFT9d9OqaEBesDU9ukouas0a5lkJd_pj62NxWbImtE6izmfkjC3eeotFccgu1LkN4COm1Ztizho3DAaAA2sbWqISWkdWEmppBuuPhM_d7DYSVSCclwXMxFsQuLDOjnKm036_q2yIizOzc0_2jBlcpFTekEE81hkuVxjEmKeX42eq3cTsqfquH3hsQRiHUIYaJ2lNMAYfLh8HryeFKwZuwcfXQGeln53pAi6LKDVdqTcVHiz_VyU1YT7kEFQjtt6ONabUsAiwVbq0nospvnbRK_m-OvPtIFpE4-mfr-RyK3Jz3h1tp7oYVGcmPaAYoo1bq8uwPXKt59LPN-Emb15_tnk7xQRy0j6ELBwySIpHu9XHqqrAChLhfza1k7PAMQMeZty87d9Rfzz2mFnO8uOSrb1ZAeVSZcp82FZcO1pAGnxvcYaBQsVEFURYcIhtxyeRYsW1Sk-Hs--wTD9mgrEBrOMqb20pLGmVIUSjdgzyZ6KOS3=s206-no?authuser=0"
+                    style="width: 201px; margin-top: 15px;"> <img class="col  img-fluid"
+                    src="https://lh3.googleusercontent.com/89EzrsASsKQ3xGgiiM-5Hw4a8sgJsptejsCTOqOPTcDNtZMKhjRPw8nCIRla5c9WrKNmV3C0Ze3QlpiYhnboCL9cY9rdgXmLAHUTT1Quvf8ADA0IKGKcLjzq3ezv01KaNlpKBl3KtvRF6YgrEnyeKom2PL42FZyv3HXi07-5ge8cqtWXSwyB_IrjfmULcufpPREi0sFUaNT0OLnCCJ8l-6oDfKA9MUZ663UvG4WyHNJROWpJj8YYqqeperIMhW5K94aA6Ad29CazUIEGNHDfrsjtpcsSRcJV-tkhB-j1XdCHPyWLTXKe2Kx_OY311Ws3o2TkOA3_WUbHTuU4G1hsOi2SGimSGA9MiA2hwuTU38US6O9KQ7jI_XEC23uojs6aU6w0VJcjEnFIu4KRr9Q8zPzO7xgAZT7xbUqr84e4kdFa1-kddho8wihfK9m4oGTHSDC3zB2Qjw_BWFWfJb7yfELcZmbvThNRGUZTUepKAMJyJiQn8YieNc5HA66ETWXwqqD134Nvf70Np5JEy9UEaiRkgF3J-xSKGMRbmZk00D0Tk6U1hx5aO5UIU7wOvP8yRttZNIZWH0aQq6KLeg1eSM6dca69X3i1KZ0DVen4ThTHFMpBa2s-jXnRS2mQfiCVF6f4fSX3WnCW6f1ApGgT7JemkDlpOvSfEGumana0k6BFxPYolOGGdZD5gOzqYbCLxzzTY6818vHJNZs3cQiyU5K30erqH4BSkhI6GMbPJBvuCC1d2sXHf3csBX1f3eTGYmO0gFjJy55Yq_aAwdOIMNmbkpEKcvVGIKo7YpcS-tOgd4yFtSUPVAYTMOaOw2j23_8pDTwxag7kcnAfVa0NTCQOHjSFJZkqt-gSyZ58qVxq7CGdkN60HBwskbTCPIYtsV3YnpRT42MAdLYagdVcaorIGwZTjz07qBfaUkYD=s206-no?authuser=0"
+                    style="width: 202px; margin-left: 20px; margin-top: 13px;">
+                  <img class="col order-last img-fluid" src="https://lh3.googleusercontent.com/WNaFSAZf7FmRqPoprtqVhUNWek_SP3vcNaUmwKmBDYcHcXYqNstRFiab3USSbWLFIONIVpkb6mYCCCl3b7drx3NiXUEwx6hcVL0B7CTeTXhTWEZSVAgiNKWWyeQfd1aJgdna7kF0t4KU5VKImq55oBnsVxna7tYTSD-ayDi1Qs12Q4yMS32uYPF-XKVCtPn_e7GohejY2uneppCCb1UgK1VcbdeQN8TTorM_jGeWJEquUQSS_sr1MeeIpXuYnEPOE78RdQAa1dsqNvVpJjPiHGSicZPKjW1XFJTN6YISKjms27RunRiMaskFO8_77NZoLeSlLhuv_dDmJe9nC_lzPM9_3ADIvVQsXp9wrHl37-4QOPAMep-X2BYH_t36kPWHrD6lbsFax_zAIdf2jshrP-ZV7XC3Dtb8XLvvKCvvrpcc3PBFoRlI_LNVUdOdrmSkO5AdVyx5iUiWgEtPww9Emwi1qOmP-MbDHAXn9Bl9atrImHYrBktVYsai9lQ8E8QU84127WKt8EU4xx9hm6ZQzrv9uddG1Rlyi6QP5f6pIMDfLKuT6P7Nvk6AlEupkgrh0M8NkvofCxGXcF-BhfirrnUHMl9Ba6GrsuR2flmtohpa4hHc2OlwlMqdh6x3hlGHnGwXAzI3Y1JLQNYek3z65ohDmtCIevZikbbtXubkwsTBT5q7TwLnZVw5q2M34Ucgk-vZMjopC_V8QjTW298OSVQurxQ5pUDugNvxFwsGIimRbLZIjtFIGccRRCjlIFiK0hKQ_rXWTl6J6JRLzBt0oQ2odp78AoOd_4fUqecmjF5hEM7BQO9fbQdz_t-8LqaEnwVBtAkSTkMyEEUKhA_Ere0ywilzYeugxJMAy3O6Ukbh9GVlqhG88IdT1ESxKM6Ig5WTp8deTR6FxT9FfXtktPj0882tV1PBsWlAvpy0=w593-h395-no?authuser=0"
+                    style="width: 194px; margin-top: 11px;"> </div>
+                <div class="row"> <img class="col order-first img-fluid" src="https://lh3.googleusercontent.com/MvvBgg6AhrvlUzQArbDv-p-DBozjxC0WLtGKFejfuTYYN-2A6pnlP6dYA8PZDxoxHm9LKG1y6BZKO6rS7dFIWmzU9wWtWXoYw6UXuBGcSeP_PJZNahj70_JrNIBmRexidgZlkeluwwWgzShjhJ3zDAdcHR-cb4dU5daOTx6EC_0fgNGQ1Uf2lyz8pHmVumj6X_AvX72LwYj-KQx7kxxzj8OgExhBYs6C6DSI6Xq1unI4LK5amiedap29JYmTjgw-Qh8PUOzFqzKieKGWZA7EV4KAveOqCk3A9wFP-w_ajtknZ0l_yQBH21PnWVnr414yRbyCP1kVJ6xvURdTpUvo5zsqORSHm6WkBobQ1_eVLmgQTdGXrltGdJB3tp2xpoKUZ8j6zJwrEbZV32EtDc0yacZeSSRlM4kY0S1OJRpsa7NQwcsRmw0Z7WfKPqYZNuPmH7VF7P6Y83QelRVHQv4xsjYwCVIIz0KZkAxAFGU-Nlb93lZ1NLGYLlUdrHMH9ecDG229WsafhDHNU3b41SzgEFpV7WFjSBStuU5cOQMBTgs9IXwvw1ezxo-XtwDM5tFBnPqry3fVKnzQXmufDypSzxCB_6FHaYBucoequ6Oi_Xk5jL8s-yMAEYFyk6yU6Ev0DNUboLaqcsepzi3w4xfCtRzBUuSJPzKfT1QHzX4DqWIJ-vBPp2lOU64RKOWqfe7YUKoCn_yb0CvN4dmnVCgwmjQVgu0dil8k2OLgkjIANzQeNcz6KmbnYMVBuOScGG29fdbUYXx3Kv4rCMoWdeaPvwHfZ_nFzFr5R2KuvYxKhMZti_OLWsZgQOLcsnYEbIyikBqVPMBSXMLmyG37mY9mAwcYIMILb_wiHAElKbxQ4xBVHd73tqGZgQRtHxjIyNgiLRH7-FFayTnvzys4GRHMAJdqRp-HuzMlI5Vv9Dkb=w593-h395-no?authuser=0"
+                    style=""><img class="col  img-fluid" src="https://lh3.googleusercontent.com/L3YXEx8Sq7j9bI-FGo9bBJgU9P2GXVVqMcLPj_mFV7XZcOkd5OcuEltgi1WVjJuvlsL3DaFptBuSN8_yfE-LWJ4OqKRHgvjoV033lBhJx1cQNWBEdJ7CQJqWFSjyqFFbSCDSD2TTwg_BHBk27bOom27AXkKZt5KrkviVOg2yVY0VEhroRtg76-E5eCChyphXLd-KPmVFu7gHX5UzL-jBPytkVBsEV0WmZi4gMO9Vd0f_HeUwbxfuNkrgCVEDhUF1rsPEf_1nC8RhAKNCfoLNm_upQ3u_jNUNCqpdtYC3vJvZmktJnLtccanTeJSXi2wLhcEqaU0qD8-LV45Kg6-ePYdhRJv_itp5A-4PBEbkJG_KERRzSQ0MFoL_PMFzJUsQ5Tni-cTfnCO1ijnwtwXDQpfF0JeQjGc1gPNsdaGf3usDIB7F7z2FMzfdizzwEbzAsibbh_J-NlNYnU93fm1XjrnRnR2zFgHez4FQEqiWqlWRwQCW6JmREKjLKW9R4uqdHiPdJnSJ8JmMChk2MIPhLEb1FWRgdgMDIcc-pUipmgktkAJrdmKm6-jyAMH62249Y2L7ShuDEz0Mc50H5UeZxafWkKCQM5qlbtbXFFvYrjckfkcF0s1TJSLXqgaNrl0nDvoCLorKjWgkew12RP_Hph4YHDoEc5r-B8JNE7pf4t3xVgbLdCuGDCJ7e7q6O2ALQaF3yIDCuD7rKvC1xBVn1cmMO3qDpilWR8h9njEdAjz7PAcKK9inpQNUvTMj_IUQM3Qg1rB3Se8ZA3dhiHO1kQvwfOIchseSMpTSQyu6ywuGGP1VC-PKan_J6zsY0_Y1BW5qnjNcQC_XpWn-6zqWtAtZSlqDG86jQaBoU_J50FnsmyHUdeKBzIrtLpIMGSoTfOFhLY2OppFElka-rBqVPsgqLjvON4RmQv1jIU7v=s206-no?authuser=0"
+                    style="width: 202px; margin-left: 20px; margin-top: 38px; height: 298px;"><img
+                    class="col order-last img-fluid" src="https://lh3.googleusercontent.com/ViAK3obWVv3m3fzXRNsUCOI8EXmwdEJdEnW2FVTg9-dTHTbTGkCIfYOYm3e8VOGqJt4QWVWL8C1mlzCtpTiuXg6LTBxgb4ey610h8dJrnjMnsNm93SOrZBjPI5HpxJbxQlZH-oh2xE1gr0JX2JhqQZPUwyZVAJ75S5R_i0sLaufcPJc2Ds8tuoeFHVKbAsbHdkRC3cfJfzTD_mhJO3JizFHMFbf5tpwVkCosBSJGmTsp2Qk6nmLL2gLkyx6KaJEvufejTunPJZBFmaTPc0OdY7Ebc3gW4ibR5OuTClOpDG1CeJx9mUoWugE7dw5C-pooxT8t1AfsE7uEkg9mCNF2FJdyHNKZjtNw9hL-PnoKtOmUQnxC4AaXELvi8URB7PNKMi7tuOeFUT6F1stgLSESC4h-P2xf4oo7aCIbXR1ydjKmmHF6i3FxMKnswozkP09i-im4tNSuSpnNsL9V3PuuwWCgChVjKz23OYfa8pDOAqUdPt_zTOwS-gsGNMehuF--h5Vcg41iF2v9Gxag8SttXv7l3W5uHlHiNrqFGmtaCuHT3yZjAYeY6j9oviNBF151JUflyyAZ4qelwWasxcbHR0qM6LSRunegjvDCuBXOhM65E1-XAREQu08fabbKv77Dy5qehlG3LE_WByKn_ViJZh9HkFh69JpHe_aB4Wb1t8766KveGU9DjdS2MA0c4QtAawDuVQzEd06vavPJXz_zoDaETZZLkjafnM5W62-SGOh8Zveo0m92A4_dl71RXVE4-YyiY8MwvLlQSG7EvUwmYPfISM-vLMAHiwTfnc-tJAihqygn7AZeRENu14shzgswK_qxLbpM0s8EU_fsNamcu0VO-xp1jJrwfq0fgPU7uUHySs3Ydq4lBBBl8iIIY7C63tWF8L9VJEHsXsumLBntIYo2YzG3YpQMPXo3Tkkb=s206-no?authuser=0"
+                    style="width: 194px; margin-top: 38px; height: 301px;"> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class=" ">
+      <div class="container_fluid">
+        <div class="contenu" style="background-color:green;color:yellow;font-size:24px;position:fixed; bottom:2px; z-index:10">
+          <div class="scrolling">~ Association type loi 1901 à but non lucatif ~
+            Tel 07 67 20 58 65 ~ LEFOREST 62790 ~ Email:
+            Leforest.environnement@gmail.com </div>
+          <div class="scrolling"> ~ Association type loi 1901 à but non lucatif
+            ~ Tel 07 67 20 58 65 ~ LEFOREST 62790 ~ Email:
+            Leforest.environnement@gmail.com </div>
+          <div class="scrolling"> ~ Association type loi 1901 à but non lucatif
+            ~ Tel 07 67 20 58 65 ~ LEFOREST 62790 ~ Email:
+            Leforest.environnement@gmail.com </div>
+        </div>
+      </div>
     </footer>
-        
-       
-        
-
- 
-    
-			
-		    
-			
-			
-						
-			             
-                    
-								                                    <div data-role="sp2">
-						<ul>
-							<li>
-								<a href="https://www.e-monsite.com" rel="nofollow" title="Cr&eacute;er un site">
-									<img src="../../../../medias/static/manager/e-monsite.com/im/footerems-ems.png" alt="Cr&eacute;er un site">
-								</a>
-							</li>
-							<li>
-								<a href="http://www.wuro.fr" rel="nofollow" title="Cr&eacute;er une facture">
-									<img src="../../../../medias/static/manager/wuro.fr/im/footerems-wuro.png" alt="Cr&eacute;er une facture">
-								</a>
-							</li>
-							<li>
-								<a href="http://www.agendaculturel.fr" rel="nofollow" title="Agenda Culturel">
-									<img src="../../../../medias/static/manager/agendaculturel.fr/im/footerems-ac.png" alt="Agenda Culturel">
-								</a>
-							</li>
-						</ul>
-						<a href="javascript:void(0)" onclick="$(this).parent().remove()">&times;</a>
-					</div>
-					<style>
-						[data-role="sp2"]{
-							display: flex;
-							position: fixed;
-							height: 40px;
-							right: 0;
-							bottom: 0;
-							left: 0;
-							padding: 18px 15px 12px 15px;
-							align-items: flex-start;
-							background: rgba(0,0,0,.8);
-							font-family: sans-serif;
-							font-weight: normal;
-							font-size: 14px;
-							z-index: 99999999;
-						}
-						[data-role="sp2"]:before{
-							display: inline-block;
-							position: absolute;
-							top: 0;
-							left: 15px;
-							padding: 2px;
-							line-height: 1;
-							text-transform: uppercase;
-							font-size: 11px;
-							color: #fff;
-							background: rgba(0,0,0,1);
-							content: "sponsors";
-						}
-						[data-role="sp2"] ul{
-							flex: 1;
-							display: flex;
-							height: 100%;
-							list-style: none;
-							margin: 0;
-							align-items: center;
-							justify-content: center;
-						}
-						[data-role="sp2"] ul li{
-							flex: 1;
-							max-width: 270px;
-							text-align: center;
-							overflow: hidden;
-						}
-						[data-role="sp2"] > a{
-							display: inline-block;
-							width: 20px;
-							height: 20px;
-							line-height: 20px;
-							color: rgba(255,255,255,.5);
-							font-weight: bold;
-							font-size: 24px;
-							text-align: center;
-						}
-						@media (max-width: 589px){
-							[data-role="sp2"] ul li:nth-child(n+2){
-								display: none;
-							}
-						}
-						@media (min-width: 590px) and (max-width: 859px){
-							[data-role="sp2"] ul li:nth-child(n+3){
-							display: none;
-						}
-						}
-						@media (min-width: 860px) and (max-width: 1129px){
-							[data-role="sp2"] ul li:nth-child(n+4){
-								display: none;
-							}
-						}
-						@media (min-width: 1130px) and (max-width: 1399px){
-							[data-role="sp2"] ul li:nth-child(n+5){
-								display: none;
-							}
-						}
-						@media (min-width: 1400px) and (max-width: 1669px){
-							[data-role="sp2"] ul li:nth-child(n+6){
-								display: none;
-							}
-						}
-						@media (min-width: 1670px) and (max-width: 1939px){
-							[data-role="sp2"] ul li:nth-child(n+7){
-								display: none;
-							}
-						}
-						@media (min-width: 1940px) and (max-width: 2209px){
-							[data-role="sp2"] ul li:nth-child(n+8){
-								display: none;
-							}
-						}
-					</style>
-                		
-			 		 	 
-
-
-
-
-
-</body>
+  </body>
 </html>
