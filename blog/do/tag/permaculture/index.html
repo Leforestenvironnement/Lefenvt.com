@@ -23,16 +23,20 @@
       rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      
       crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
-crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-
 crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-
 crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous">
     <style type="text/css">
 html, body {top:10px;
   background: rgba(0, 0, 0, 0) radial-gradient(circle, #eff5f0 37%, #becdbb 100%) repeat scroll 0% 0%;
@@ -126,16 +130,65 @@ a {
      -webkit-filter: drop-shadow(8px 8px 10px  rgba(100,100,100,0.45)); /* Safari */
     filter: drop-shadow(20px 15px 10px  rgba(100,100,100,0.45));
 }
-     ]
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
 </style> </head>
   <body>
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg" id="mainNav" style="position:fixed;
     background-image: linear-gradient(to right, #45835b, #578c6b, #69947a, #7b9c89, #8ea498);">
       <div class="container-fluid px-4 px-lg-5">
-        <h1> <img class="img-fluid ms-1" src="http://leforestenvironnement.github.io/Lefenvt.com/medias/images/logo_vert_clair.png"
+        <h1> <img class="img-fluid  ms-1" src="http://leforestenvironnement.github.io/Lefenvt.com/medias/images/logo_vert_clair.png"
             style="top: 297px; left: 48px; width: 52px; height: 49px; margin-left: -28px; color: white;">
-            <span style="color: #ffff33;"> Leforest environnement </span></h1>
+          <span style="color: #ffff33;"> Leforest environnement </span></h1>
         &nbsp; <span style="color: #ffff33;" id="BG_1664343885904_75538">(permaculture)</span>
         <span style="color: white;"> <button class="navbar-toggler " type="button"
             data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
@@ -196,7 +249,7 @@ a {
             phréatiques et tous les êtres vivants qui existent (les nuisibles
             également).</span></h4>
       </div>
-      <p></p>
+      
       <div class="accordion" id="exempleAccordeon">
         <div class="card">
           <section class="pt-0">
@@ -204,88 +257,125 @@ a {
                 class="accordion-button btn-link titre2" type="button" data-toggle="collapse"
                 data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">La
                 permaculture comment ça marche ?</button> </div>
-            <div id="collapse1" class="collapse " aria-labelledby="header1" data-parent="#exempleAccordeon">
-              <div class="container-fluid card-body">
-                <div class="row ">
-                  <div class="col-4"><img class="img-fluid" src="http://www.monjardinenpermaculture.fr/system/rich/rich_files/rich_files/000/000/320/trois-tiers/capture-20d-e2-80-99e-cc-81cran-202016-02-15-20a-cc-80-2013-52-45.png"
-                      alt="" style="width: 80%;"></div>
-                  <p class="float-md-start badge bg-success text-wrap text-align"
-                    style="color:white;padding:50px;">De tout petits êtres
-                    vivants (collemboles, acariens, cloporte...), des
-                    micro-organismes (bactéries, champignons) et des vers de
-                    terre sont présents dans le sol. Cette faune va travailler
-                    le sol et décomposer la matière organique déposée en surface
-                    (feuilles mortes, paillis) ou les racines mortes.; Les
-                    bactéries et les champignons transforment la matière
-                    organique en Humus L'humus nourrit les plantes (azote,
-                    phosphore, potassium, magnesium, ...) et stocke l'eau .</p>
+            <div id="collapse1" class="collapse" aria-labelledby="header1"
+              data-parent="#exempleAccordeon">
+              <main>
+                <div class="album py-5 bg-light">
+                  <div class="container">
+                    <div class="row ">
+                      <div class="card">
+                        <div class="card">
+                          <div class="card">
+                            <h2>LE SOL VIVANT<img class="img-fluid" src="http://www.monjardinenpermaculture.fr/system/rich/rich_files/rich_files/000/000/320/trois-tiers/capture-20d-e2-80-99e-cc-81cran-202016-02-15-20a-cc-80-2013-52-45.png"
+                                alt="" style="width: 80%;"></h2>
+                          </div>
+                          <div class="card-body">
+                            <p class="card-text  badge bg-success text-wrap text-align fs-6 text"><span
+                                style="font-family: Kalam;" class="fs-6 text">De
+                                tout petits êtres vivants (collemboles,
+                                acariens, cloporte...), des micro-organismes
+                                (bactéries, champignons) et des vers de terre
+                                sont présents dans le sol. Cette faune va
+                                travailler le sol et décomposer la matière
+                                organique déposée en surface (feuilles mortes,
+                                paillis) ou les racines mortes.; Les bactéries
+                                et les champignons transforment la matière
+                                organique en Humus L'humus nourrit les plantes
+                                (azote, phosphore, potassium, magnesium, ...) et
+                                stocke l'eau .</span></p>
+                            <h1 class="card-text" style=" text-align: center;">LE
+                              PAILLAGE</h1>
+                            <div class="d-flex justify-content-between align-items-center"><img
+                                class="img-fluid" src="http://www.monjardinenpermaculture.fr/system/rich/rich_files/rich_files/000/000/110/content_thumb/mulch-1.jpg?1440877051"
+                                style="width: 80%;"> </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card ">
+                          <div class="card-body">
+                            <p class="card-text badge bg-success text-wrap text-align fs-6 text"><span
+                                style="font-family: Kalam;" class="fs-6 text">"Pailler
+                                le sol" signifie couvrir la surface du sol, avec
+                                par exemple des feuilles mortes, des tontes de
+                                gazon, du BRF (Bois Raméal Fragmenté), de la
+                                paille...<br>
+                                Le paillage du sol est essentiel, même sur un
+                                balcon, cela présente de multiples avantages :<br>
+                                cela limite les herbes indésirables cela réduit
+                                les besoins d'arrosage (l'évaporation est
+                                divisée par 4) cela protège le sol (du
+                                tassement, de l'érosion) et la faune du sol cela
+                                nourrit le</span>s organismes qui travaillent le
+                              sol et le rendent fertile</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <h1 style="text-align: center;">Améliorer le sol</h1>
+                              <h1> </h1>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="">
+                        <div class="card ">
+                          <div class="card"><img class="img-fluid" src="http://www.monjardinenpermaculture.fr/system/rich/rich_files/rich_files/000/000/202/content_thumb/ame-cc-81liorer-20le-20sol-2.jpg?1442507259"
+                              style="width: 80%;"></div>
+                          <div class="card-body">
+                            <p class="card-text badge bg-success text-wrap text-align fs-6 text"><span
+                                style="font-family: Kalam;" class="fs-6 text">En
+                                permaculture, améliorer (on parle d'aggrader) le
+                                sol, le rendre toujours plus vivant et fertile,
+                                est un objectif essentiel.<br>
+                                C'est le sol qui nourrit la plante et lui
+                                fournit les éléments nutritifs dont elle a
+                                besoin. Grâce aux paillis de matière organique
+                                on nourrit la faune du sol et on permet la
+                                création du précieux humus.<br>
+                                D'autres actions peuvent s'avérer nécessaires,
+                                comme le décompactage, la recherche d'un pH (le
+                                niveau d'acidité) adapté aux cultures
+                                souhaitées, l'ajout d'amendements pour modifier
+                                la texture. Les engrais verts et le compost sont
+                                d'excellents moyens pour améliorer le s</span>ol.</p>
+                            <h1 style="text-align: center;"> Faire du compost</h1>
+                            <h1> </h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="">
+                        <div class="card ">
+                          <div class="card"><img class="img-fluid" src="http://www.monjardinenpermaculture.fr/system/rich/rich_files/rich_files/000/000/114/content_thumb/compost-1.jpg?1440878186"
+                              style="width: 80%;"></div>
+                          <div class="card-body">
+                            <p class="card-text  badge bg-success text-wrap text-align fs-6 text"><span
+                                style="font-family: Kalam;" class="fs-6 text">Faire
+                                du compost permet de créer un sol fertile, tout
+                                en recyclant des déchets du jardin et de la
+                                cuisine, qui seront sinon collectés, transportés
+                                et incinérés, générant pollution et coûts pour
+                                la collectivité. Faire du compost est simple,
+                                facile, réalisable par tout un chacun mais ce
+                                n'est pas un simple tas de déchets oubliés au
+                                fond du jardin.<br>
+                                Le compost est le résultat d'une décomposition,
+                                c'est-à-dire d'une transformation de matières
+                                organiques (végétales ou animales) par des êtres
+                                vivants (insectes, vers, bactéries...). Cette
+                                décomposition nécessite de l'oxygène sinon les
+                                déchets pourrissent.<br>
+                                Les clés pour réussir rapidement un bon compost
+                                sont : les bons ingrédients, un bon équilibre de
+                                ces ingrédients, de l'aération et un bon taux
+                                d'humidité.</span><br>
+                              On peut faire un compost de différentes manières :
+                              en tas, en composteur, sur le sol, en
+                              lombricomposteur.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="row justify-content-start"><br>
-              </div>
-              <hr>
-              <h3><span style="color: #990000;">LE PAILLAGE</span></h3>
-              <h3> </h3>
-              <div class="row ">
-                <div class="col-4"><img class="img-fluid" src="http://www.monjardinenpermaculture.fr/system/rich/rich_files/rich_files/000/000/110/content_thumb/mulch-1.jpg?1440877051"
-                    style="width: 80%;"></div>
-                <p class="float-md-start badge bg-success text-wrap text-align"
-                  style="color:white;padding:50px;">"Pailler le sol" signifie
-                  couvrir la surface du sol, avec par exemple des feuilles
-                  mortes, des tontes de gazon, du BRF (Bois Raméal Fragmenté),
-                  de la paille... <br>
-                  Le paillage du sol est essentiel, même sur un balcon, cela
-                  présente de multiples avantages : <br>
-                  cela limite les herbes indésirables cela réduit les besoins
-                  d'arrosage (l'évaporation est divisée par 4) cela protège le
-                  sol (du tassement, de l'érosion) et la faune du sol cela
-                  nourrit les organismes qui travaillent le sol et le rendent
-                  fertile</p>
-              </div>
-              <hr>
-              <h3> <span style="color: #990000;">AMELIORER LE SOL</span></h3>
-              <div class="row ">
-                <div class="col-4"><img-fluid src="http://www.monjardinenpermaculture.fr/system/rich/rich_files/rich_files/000/000/202/content_thumb/ame-cc-81liorer-20le-20sol-2.jpg?1442507259"
-                    style="width: 80%;"></img-fluid></div>
-                <p class="float-md-start badge bg-success text-wrap text-align"
-                  style="color:white;padding:50px;">En permaculture, améliorer
-                  (on parle d'aggrader) le sol, le rendre toujours plus vivant
-                  et fertile, est un objectif essentiel. <br>
-                  C'est le sol qui nourrit la plante et lui fournit les éléments
-                  nutritifs dont elle a besoin. Grâce aux paillis de matière
-                  organique on nourrit la faune du sol et on permet la création
-                  du précieux humus. <br>
-                  D'autres actions peuvent s'avérer nécessaires, comme le
-                  décompactage, la recherche d'un pH (le niveau d'acidité)
-                  adapté aux cultures souhaitées, l'ajout d'amendements pour
-                  modifier la texture. Les engrais verts et le compost sont
-                  d'excellents moyens pour améliorer le sol.</p>
-              </div>
-              <hr>
-              <div class="row "><br>
-              </div>
-              <h3><span style="color: #990000;">Faire du compost<br>
-                </span></h3>
-              <h3> </h3>
-              <div class="col-4"><img class="img-fluid" src="http://www.monjardinenpermaculture.fr/system/rich/rich_files/rich_files/000/000/114/content_thumb/compost-1.jpg?1440878186"
-                  style="width: 80%;"></div>
-              <p class="float-md-start badge bg-success text-wrap text-align" style="color:white;padding:50px;">Faire
-                du compost permet de créer un sol fertile, tout en recyclant des
-                déchets du jardin et de la cuisine, qui seront sinon collectés,
-                transportés et incinérés, générant pollution et coûts pour la
-                collectivité. Faire du compost est simple, facile, réalisable
-                par tout un chacun mais ce n'est pas un simple tas de déchets
-                oubliés au fond du jardin. <br>
-                Le compost est le résultat d'une décomposition, c'est-à-dire
-                d'une transformation de matières organiques (végétales ou
-                animales) par des êtres vivants (insectes, vers, bactéries...).
-                Cette décomposition nécessite de l'oxygène sinon les déchets
-                pourrissent. <br>
-                Les clés pour réussir rapidement un bon compost sont : les bons
-                ingrédients, un bon équilibre de ces ingrédients, de l'aération
-                et un bon taux d'humidité. <br>
-                On peut faire un compost de différentes manières : en tas, en
-                composteur, sur le sol, en lombricomposteur.</p>
+              </main>
             </div>
           </section>
         </div>
@@ -294,8 +384,8 @@ a {
     <div class="card">
       <div class="card-header" id="header2"> <button class="accordion-button btn-link titre2"
           type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true"
-          aria-controls="collapse2">Documentation utile au
-          permaculteur</button> </div>
+          aria-controls="collapse2">Documentation utile au permaculteur</button>
+      </div>
       <div id="collapse2" class="collapse " aria-labelledby="header2" data-parent="#exempleAccordeon">
         <div class="card-body">
           <section class="pt-0">
